@@ -10,16 +10,14 @@
   <link rel="stylesheet" href="../css/main.css" />
   <link rel="stylesheet" href="../css/animate.css" />
   <link rel="stylesheet" href="../css/home.css" />
-  <link rel="stylesheet" href="../css/slick.css" />
   <link rel="stylesheet" href="../css/industries.css" />
-  <link rel="stylesheet" href="../css/videoslide.css" />
   <link rel="stylesheet" href="../css/jquery.fullpage.css" />
   <title class=""></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 </head>
 
-<body class="bodyStyle wow fadeInDown">
+<body class="bodyStyle wow fadeInDown" style="overflow-x:hidden">
   <div class="col-xs-12 noPadding">
     <div class="navbar navbar-custom navbar-default navbar-fixed-top">
    <div class="navbar-header">
@@ -64,72 +62,18 @@
   </div>
 
 <div class="col-xs-12 main-div noPadding" >
-  <div class="col-xs-12 noPadding">
-    <img src="../images/bannerindustries.jpg" class="industry-banner">
-    <div class="industry-sublabel"><h2><span class="industry-sublabel-span" style="color: #ffffff;">Where We Have Deep Domain Expertise</span></h2></div>
+  <div class="col-xs-12"><img src="../images/industrybanner.jpg" class="industry-banner">
+    <div class="industry-sublabel industry-health" style="bottom:0px;"><h2><span style="color: #ffffff;">Lorem Ipsum is simply dummy text of the printing and typesetting industry</span></h2></div>
   </div>
 </div>
-<div class="col-xs-12 noPadding">
-  <div class="col-xs-12 cm-div">
-      <p class="cm-paragraph">
-      Wissen’s deep domain expertise helps clients translate emerging imperatives to competitive advantages. Our strong team of experts wade through the hype and implement concrete solutions that provide tangible business value.
-      </p>
-      <div class="col-xs-12 noPadding">
-        <h2 class="industries-lg3">Industries</h2>
-
-      </div>
-  </div>
-  <div class="col-xs-12 noPadding industries-background">
-    <div class="col-xs-12 noPadding" style="padding-top:40px;">
-    <div class="wpb_raw_code wpb_content_element wpb_raw_html col-xs-12 col-sm-6 col-md-4">
-      <div class="wpb_wrapper">
-        <div class="nb nb1" style="min-height:380px;width:240px;">
-          <a href="banking-financial.html" style="text-decoration:none">
-            <img class="bimg" src="../images/Banking-Financial.jpg" style="width: 100%;height: 190px;">
-            <h3 style="font-size:20px;font-family:Raleway-Bold; color: #000000; padding-top: 7px;padding-left:10px;padding-right:15px;text-align:justify;">Banking & Financial</h5>
-            <p class="industries-paragraph">
-              We Bring the right mix of domain and technical expertise to help you take emerging imperatives head on and translate them on to competative advantage.
-            </p>
-            <span class="know-more">KNOW MORE <img style="vertical-align:baseline;" src="../images/Rightarrow.png"></span>
-          </a>
-          </div>
-        </div>
-      </div>
-
-        <div class="wpb_raw_code wpb_content_element wpb_raw_html col-xs-12 col-sm-6 col-md-4">
-          <div class="wpb_wrapper">
-            <div class="nb nb1" style="min-height:380px;width:240px;">
-              <a href="telecom.html" style="text-decoration:none">
-                <img class="bimg" src="../images/Telecom.jpg" style="width: 100%;height: 190px;">
-                <h3 style="font-size:20px;font-family:Raleway-Bold; color: #000000; padding-top: 7px;padding-left:10px;padding-right:15px;text-align:justify;">Telecom</h5>
-                <p class="industries-paragraph">
-                  Telecom operators are facing increasing challenges in the digital era. Wissen broad capabilities and experience in telecom helps clients meet these
-                </p>
-                <span class="know-more">KNOW MORE <img style="vertical-align:baseline;" src="../images/Rightarrow.png"></span>
-              </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="wpb_raw_code wpb_content_element wpb_raw_html col-xs-12 col-sm-6 col-md-4">
-            <div class="wpb_wrapper">
-              <div class="nb nb1" style="min-height:380px;width:240px;">
-                <a href="healthcare.html" style="text-decoration:none">
-                  <img class="bimg" src="../images/Healthcare.jpg" style="width: 100%;height: 190px;">
-                  <h3 style="font-size:20px;font-family:Raleway-Bold; color: #000000; padding-top: 7px;padding-left:10px;padding-right:15px;text-align:justify;">Healthcare</h5>
-                  <p class="industries-paragraph">
-                    We can help to navigate the changed landscape of manged car model in Healthcare
-                  </p>
-                  <span class="know-more">KNOW MORE <img style="vertical-align:baseline;" src="../images/Rightarrow.png"></span>
-                </a>
-                </div>
-              </div>
-            </div>
+<div class="col-xs-12">
+  <div class="col-xs-12 industries-heading">
+    <h2 style="padding-bottom:2%">Lorem Ipsum is simply dummy text.</h2>
+    <p class="industries_details">
+      It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+    </p>
   </div>
 </div>
-</div>
-
-
 
 
     <div class="col-xs-12" style="padding:0px">
@@ -194,22 +138,22 @@
   <script src="../js/jquery.js"></script>
   <script src="../js/bootstrap.js"></script>
   <script src="../js/wow.js"></script>
-  <script src="../js/slick.min.js"></script>
+  <script src="../js/jquery.diyslider.min.js"></script>
   <script src="../js/jquery.fullpage.js"></script>
-<script>
-$(document).ready(function() {
-  $('#fullpage').fullpage();
-  var wow = new WOW({
-    animateClass: 'animated',
-    offset: 100,
-    callback: function(box) {
-      console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
-    }
-  });
-  wow.init();
-});
-</script>
+  <script>
+    $(document).ready(function() {
+      $('#fullpage').fullpage();
+      var wow = new WOW({
+        animateClass: 'animated',
+        offset: 100,
+        callback: function(box) {
+          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+      });
+      wow.init();
+    });
 
+  </script>
 </body>
 
 </html>

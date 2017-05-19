@@ -28,7 +28,7 @@
   width: 20%;
   color: white;
   text-align: center;
-  padding-bottom: 45px;
+  height: 200px;
 }
 .whoWeAreIcons1 {
   background: #014976;
@@ -106,7 +106,6 @@
    margin: 0 auto;
    overflow: hidden;
    text-align: center;
-   box-shadow: -13px -9px 22px -12px rgba(148,148,148,1);
 }
 a, a:visited, a:focus {
    text-decoration: none;
@@ -120,7 +119,7 @@ a {
     background: #ff932a;
 }
 .nb:hover {
-  box-shadow: -13px -9px 22px -9px rgba(148,148,148,1);
+
 }
 .nb::after {
    content: '';

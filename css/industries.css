@@ -9,12 +9,12 @@
   min-height:80px;
   max-width: 700px;
   float:left;
-  padding:4% 13% 2% 2%;
+  padding:1% 13% 2% 2%;
   border-left:20px solid #034A77;
   position:absolute;
   z-index:100;
-  bottom:0px;
-  left:3%;
+  bottom:-5px;
+  left:5%;
 }
 .cm-div{
   padding:5% 5% 2% 5%;
@@ -104,9 +104,20 @@
     font-size: 18px;
   }
   .industry-sublabel{
-    width:95%;
+    width:90%;
   }
-
+.nb::after {
+  content: '';
+  position: absolute;
+  width: 940%;
+  height: 100%;
+  top: 20px;
+  right: -483%;
+  background: #ffffff;
+  transform-origin: 54% 0;
+  transform: rotate(129deg);
+  z-index: -1;
+}
 }
 @media (max-width:992px) and (min-width:768px){
   .slider-demo{
@@ -125,7 +136,7 @@
     text-align: center !important;
   }
   .industry-health{
-    width: 95%;
+    width: 90%;
   }
 }
 @media screen and (min-width:768px) {
@@ -176,6 +187,7 @@
     background-image:url("../images/Rightarrow.png") !important;
     width: 30px !important;
     height: 20px;
+    right: -25px !important;
   }
 .slick-next::before{
    content: '' !important;

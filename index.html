@@ -40,14 +40,23 @@
 
             <ul class="dropdown-menu">
               <div class="triangle"></div>
-              <li><a href="#">Who we are</a></li>
-              <li><a href="#">What's new</a></li>
-              <li><a href="#">Industries</a></li>
-              <li><a href="#">Technology parctise</a></li>
-              <li style="border-bottom:none;"><a href="#">Testimonials</a></li>
+              <li><a href="index.html">Who we are</a></li>
+              <li><a href="index.html">What's new</a></li>
+              <li><a href="index.html">Industries</a></li>
+              <li><a href="index.html">Technology parctise</a></li>
+              <li style="border-bottom:none;"><a href="index.html">Testimonials</a></li>
             </ul>
           </li>
-          <li><a href="#">Industries</a></li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="Industries/bankingfinanciaL3.html">Industries</span></a>
+
+            <ul class="dropdown-menu">
+              <div class="triangle"></div>
+              <li><a href="Industries/industries.html">Industries</a></li>
+              <li><a href="Industries/banking-financial.html">Banking & Financial</a></li>
+              <li><a href="Industries/telecom.html">Telecom</a></li>
+              <li style="border-bottom:none;"><a href="Industries/healthcare.html">Healthcare</a></li>
+            </ul>
+          </li>
           <li><a href="#">Technology</a></li>
           <li><a href="#">Company</a></li>
           <li><a href="#">Career</a></li>
@@ -407,9 +416,6 @@
         nextArrow: '<i class="fa fa-arrow-right"><img src="images/Leftarrow.png"></i>',
         prevArrow: '<i class="fa fa-arrow-left"><img src="images/Leftarrow.png"></i>',
         // add the rest of your options here
-    });
-    $(".navbar-toggle").mouseover(function(){
-         $(this).click();
     });
     $(".themeDarkBlue").mouseover(function(){
          if($(".navbar-collapse.collapse").hasClass('in')){

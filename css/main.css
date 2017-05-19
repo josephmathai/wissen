@@ -218,6 +218,15 @@
 }
 }
 
+.text_head5{
+  font-size: 15px;
+  color: #000000;
+  padding-top: 7px;
+  padding-left:10px;
+  text-align:justify;
+  width:200px;
+  display:block
+}
 .line-div {
     height: 5px;
     background: #fff;
@@ -234,4 +243,8 @@
 
 .navbar {
     margin-bottom: 0px !important;
+}
+
+.dropdown:hover > .dropdown-menu {
+    display: block;
 }
