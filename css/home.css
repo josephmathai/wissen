@@ -117,9 +117,11 @@ a {
 }
 .nb:hover::after {
     background: #ff932a;
+    color: black;
+    cursor: pointer;
 }
-.nb:hover {
-
+.nb{
+     box-shadow: -39px -35px 24px -35px rgba(0,0,0,0.75);
 }
 .nb::after {
    content: '';
@@ -154,7 +156,7 @@ a {
   width:12%;
   float:left;
   padding-left:5px;
-  font-size: 18px;
+  font-size: 15px;
 }
 .footer_content_demo{
   padding-top:20px;
@@ -177,7 +179,7 @@ a {
 .contact_email{display:block;font-size:14px;padding-left:10px;}
 .footer_followus{height:53px;background:black;margin-top: 17px;}
 .followus{color:white;font-size:15px;display:block;padding-left:10px;font-weight: 600;}
-.copyright_footer{height:50px;color:white;background:black;display: -webkit-box;width:100%;font-size: 12px}
+.copyright_footer{height:50px;color:white;background:black;display: -webkit-box;width:100%;font-size: 15px}
 .main_footer{background:#1A5B83;min-height:190px;color:white;text-align: -webkit-auto;display: flex;}
 
 @media (max-width:800px){
@@ -231,4 +233,7 @@ a {
 
 .slick-next {
     right: 5px !important;
+}
+.bimg{
+
 }
