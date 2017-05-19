@@ -1,0 +1,28 @@
+.leadershipOuterAlign {
+  margin-left: 5%;
+  margin-top: 45px;
+}
+.fullWidthImg {
+  width: 100%;
+}
+.leaderName {
+  color: #f79131;
+  font-family: Raleway-Bold;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.leaderCard {
+  border-bottom: 1px solid #B3B3B3;
+  padding: 20px 0;
+}
+@media screen and (max-width:768px){
+  .leaderImgAdj {
+    margin-bottom: 15px;
+  }
+  .leaderName {
+    text-align: center;
+  }
+  .leaderDescription {
+    padding: 0;
+  }
+}

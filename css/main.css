@@ -1,0 +1,237 @@
+.noPadding{
+  padding-left: 0;
+  padding-right: 0;
+}
+.bodyStyle {
+  font-family: Raleway-Regular;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
+    color: white !important;
+}
+.bramdImg {
+  width: 200px;
+}
+.wssNav{
+  border-top: 3px solid #f79131;
+  background: white;
+  border-radius: 0;
+  padding-left: 5%;
+  padding-right: 5%;
+  min-height: 75px;
+}
+.wssNavLinks{
+  padding-top: 27px;
+}
+.customLink {
+  color: #f79131 !important;
+  padding: 12px 32px !important;
+}
+.customLink:hover {
+  color: white !important;
+}
+.navLinkBg {
+  background: #034A77;
+  font-size: 13px;
+}
+.toggleAdjust{
+  margin-top: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .wssNav {
+    min-height: 60px;
+  }
+  .bramdImg {
+    width: 150px;
+  }
+  .wssNavLinks{
+    padding-top: 0;
+  }
+  .wssNav{
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (min-width:768) and (max-width: 992px) {
+  .wssNav {
+    min-height: 60px;
+  }
+  .bramdImg {
+    width: 150px;
+  }
+  .wssNavLinks{
+    padding-top: 0;
+  }
+  .wssNav{
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.header-logo{
+  float:left;
+  padding:15px;
+  height: 80px;
+}
+.navbar-custom{
+  background: white;
+  box-shadow: 2px 0px 10px 0px rgba(0,0,0,0.75);
+  border:none;
+  padding: 2px 0px;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    color: white;
+    background-color: transparent;
+}
+.navbar-default .navbar-nav > li > a {
+    color:#f79131;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
+.navbar-default .navbar-nav > li > a:hover {
+    color: #ff932a !important;
+}
+@media (min-width:1000px) {
+  .navbar-header{
+    width: 35%;
+  }
+  .header-logo{
+    padding-left: 90px;
+  }
+  .nav{
+    width: 60%;
+    margin-top: 30px;
+    background:  #034A77;
+  }
+}
+.nav > li{
+  padding-left: 15px;
+}
+@media (max-width: 999px) {
+  .navbar-toggle{
+    margin-top: 20px;
+  }
+.navbar-header {
+   float: none;
+}
+.navbar-left,.navbar-right {
+   float: none !important;
+}
+.navbar-toggle {
+   display: block;
+}
+.navbar-collapse {
+   border-top: 1px solid transparent;
+   box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+}
+.navbar-fixed-top {
+   top: 0px;
+   border-width: 0 0 1px;
+}
+.navbar-collapse.collapse {
+   display: none!important;
+}
+.navbar-nav {
+   float: none!important;
+   margin-top: 7.5px;
+}
+.navbar-nav>li {
+   float: none;
+}
+.navbar-nav>li>a {
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.collapse.in{
+   display:block !important;
+}
+}
+
+.dropdown-menu .triangle {
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #001328;
+    top: -8px ;
+    left: 25%;
+    margin-left: -8px;
+}
+.dropdown-menu{
+    background:#001328 !important;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 167px !important;
+    border:1px solid #034A77;
+    border-top:none;
+
+}
+.dropdown-menu > li > a{
+  color:#fff !important;
+  padding-left:10px;
+  padding-right:10px;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+.dropdown-menu > li > a:hover{
+  background:transparent;
+  color:white;
+}
+.dropdown-menu > li {
+ padding-top:5px;
+ padding-bottom:5px;
+ border-bottom: 1px solid #034A77;
+}
+
+@media screen and (max-width:1000px) {
+  .dropdown-menu .triangle {
+      width: 0;
+      height: 0;
+      position: absolute;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-bottom: 8px solid #001328;
+      top: 32px !important;
+      left: 15%;
+      margin-left: 0;
+  }
+}
+@media (max-width: 767px){
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #f79131;
+    padding-left: 10px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover{
+  color: white;
+}
+}
+
+.line-div {
+    height: 5px;
+    background: #fff;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+.top-line {
+    width: 100%;
+    height: 5px;
+    margin: 0 auto;
+    background: orange;
+}
+
+.navbar {
+    margin-bottom: 0px !important;
+}
