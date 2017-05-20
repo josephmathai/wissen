@@ -78,7 +78,6 @@
   background: white;
   box-shadow: 2px 0px 10px 0px rgba(0,0,0,0.75);
   border:none;
-  padding: 2px 0px;
 }
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
     color: white;
