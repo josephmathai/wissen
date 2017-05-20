@@ -8,10 +8,10 @@
   <link rel="stylesheet" href="../css/bootstrap.css" />
   <link rel="stylesheet" href="../css/fonts.css" />
   <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/animate.css" />
   <link rel="stylesheet" href="../css/home.css" />
-  <link rel="stylesheet" href="../css/industries.css" />
   <link rel="stylesheet" href="../css/slick.css" />
-  <link rel="stylesheet" href="../css/technology.css">
+  <link rel="stylesheet" href="../css/industries.css" />
   <link rel="stylesheet" href="../css/videoslide.css" />
   <link rel="stylesheet" href="../css/jquery.fullpage.css" />
   <title class=""></title>
@@ -216,10 +216,19 @@
   <script src="../js/jquery.js"></script>
   <script src="../js/bootstrap.js"></script>
   <script src="../js/slick.min.js"></script>
+  <script src="../js/wow.js"></script>
   <script src="../js/jquery.fullpage.js"></script>
   <script>
   $(document).ready(function() {
     $('#fullpage').fullpage();
+    var wow = new WOW({
+      animateClass: 'animated',
+      offset: 100,
+      callback: function(box) {
+        console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+      }
+    });
+    wow.init();
     var v= window.innerWidth;
     if(v>1000){
       $('.slider').slick({

@@ -1,0 +1,33 @@
+.inputfield{
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1px solid #cac8ca;
+    background: #ebe9eb;
+}
+.selectboxt {
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid #cac8ca;
+    background-color: #ebe9eb;
+}
+.searclink{
+  display: block;
+  color:#f79131 !important;
+  text-decoration: none;
+  font-size: 20px;
+  position: absolute;
+  top: 47%;
+}
+
+.searclink:hover{
+  text-decoration: none;
+  color:#f79131;
+}
+.cvdrop{
+  min-height:80px;
+  height:auto;
+  padding-left:15%;
+  padding-right:15%;
+
+}
