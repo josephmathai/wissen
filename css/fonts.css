@@ -7,6 +7,10 @@
   src: url('../fonts/Raleway-BlackItalic.ttf') format('truetype');
 }
 @font-face {
+  font-family: 'font-awesome';
+  src: url('../fonts/Rfont-awesome.ttf') format('truetype');
+}
+@font-face {
   font-family: 'Raleway-Bold';
   src: url('../fonts/Raleway-Bold.ttf') format('truetype');
 }
