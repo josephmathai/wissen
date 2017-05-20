@@ -150,6 +150,12 @@
     padding-left: 5% !important;
     padding-right: 5% !important;
   }
+
+}
+@media screen and (max-width:900px){
+  .wissenimages{
+    margin-top:30px;
+  }
 }
 @media screen and (min-width:768px) {
   .industry-sublabel{

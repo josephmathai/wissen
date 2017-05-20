@@ -31,3 +31,23 @@
   padding-right:15%;
 
 }
+.employee-label{
+  padding-right: 5% !important;
+  background: #1a5b85 !important;
+}
+@media screen and (min-width:768px){
+  .employee-label{
+    top:0px !important;
+  }
+}
+@media screen and (max-width:767px) {
+  .project-head{
+    font-size: x-large !important;
+  }
+  .working-sublabel-span{
+    font-size: x-large !important;
+  }
+  .wissen-care{
+    padding-top: 18px !important;
+  }
+}
