@@ -241,10 +241,19 @@
     });
     wow.init();
     var v= window.innerWidth;
-    if(v>768){
+    if(v>1000){
       $('.slider').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
+        prevArrow: '<div class="slick-prev"></div>',
+        nextArrow: '<div class="slick-next"></div>'
+      });
+    }
+
+    else if(v<1000 && v>750){
+      $('.slider').slick({
+        slidesToShow: 2,
+        slidesToScroll: 2,
         prevArrow: '<div class="slick-prev"></div>',
         nextArrow: '<div class="slick-next"></div>'
       });

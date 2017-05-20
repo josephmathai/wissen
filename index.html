@@ -226,41 +226,54 @@
           <p class="whoWeAre">Technology</p>
         </div>
         <div class="col-xs-12">
-          <div class="col-md-4">
-            <div class="wpb_raw_code wpb_content_element wpb_raw_html">
-              <div class="wpb_wrapper">
-                <div class="nb">
-                  <a href="" style="text-decoration:none">
-                    <img class="bimg" src="images/Distributed-application-development.jpg" style="width: 100%;">
-                    <h5 style="font-size: 18px; color: #000000; padding-top: 15px;">Digital Experience</h5></a>
+          <div class="flexslider-2">
+            <ul class="slides">
+              <li>
+                <div class="wpb_wrapper">
+                  <div class="nb">
+                    <a href="" style="text-decoration:none">
+                      <img class="bimg" src="images/Distributed-application-development.jpg" style="width: 100%;">
+                      <h5 style="font-size: 18px; color: #000000; padding-top: 15px;">Digital Experience</h5></a>
+                  </div>
                 </div>
-              </div>
-            </div>
+              </li>
+              <li>
+                <div class="wpb_wrapper">
+                  <div class="nb">
+                    <a href="" style="text-decoration:none">
+                      <img class="bimg" src="images/Digital-Experience.jpg" style="width: 100%;">
+                      <h5 style="font-size: 18px; color: #000000; padding-top: 15px;">Digital Experience</h5></a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="wpb_wrapper">
+                  <div class="nb">
+                    <a href="" style="text-decoration:none">
+                      <img class="bimg" src="images/Digital-Experience.jpg" style="width: 100%;">
+                      <h5 style="font-size: 18px; color: #000000; padding-top: 15px;">Digital Experience</h5></a>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
+          <!--<div class="col-md-4">-->
+            <!--<div class="wpb_raw_code wpb_content_element wpb_raw_html">-->
+              <!---->
+            <!--</div>-->
+          <!--</div>-->
 
-          <div class="col-md-4">
-            <div class="wpb_raw_code wpb_content_element wpb_raw_html">
-              <div class="wpb_wrapper">
-                <div class="nb">
-                  <a href="" style="text-decoration:none">
-                    <img class="bimg" src="images/Digital-Experience.jpg" style="width: 100%;">
-                    <h5 style="font-size: 18px; color: #000000; padding-top: 15px;">Digital Experience</h5></a>
-                </div>
-              </div>
-            </div>
-          </div>
+          <!--<div class="col-md-4">-->
+            <!--<div class="wpb_raw_code wpb_content_element wpb_raw_html">-->
+              <!---->
+            <!--</div>-->
+          <!--</div>-->
 
-          <div class="col-md-4">
-            <div class="wpb_raw_code wpb_content_element wpb_raw_html">
-              <div class="wpb_wrapper">
-                <div class="nb">
-                  <a href="" style="text-decoration:none">
-                    <img class="bimg" src="images/Digital-Experience.jpg" style="width: 100%;">
-                    <h5 style="font-size: 18px; color: #000000; padding-top: 15px;">Digital Experience</h5></a>
-                </div>
-              </div>
-            </div>
-          </div>
+          <!--<div class="col-md-4">-->
+            <!--<div class="wpb_raw_code wpb_content_element wpb_raw_html">-->
+              <!---->
+            <!--</div>-->
+          <!--</div>-->
 
         </div>
       </div>
@@ -434,6 +447,16 @@
     $(window).load(function(){
         $('.flexslider').flexslider({
             animation: "slide",
+            start: function(slider){
+                $('body').removeClass('loading');
+            }
+        });
+        $('.flexslider-2').flexslider({
+            animation: "slide",
+            itemWidth: 400,
+            itemMargin: 5,
+            minItems: 1,
+            maxItems: 3,
             start: function(slider){
                 $('body').removeClass('loading');
             }
