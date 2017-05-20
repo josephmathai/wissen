@@ -26,3 +26,27 @@
     padding: 0;
   }
 }
+
+.matrixImg {
+  margin: 35px 0 15px 0;
+}
+.borderLine {
+  border-bottom: 1px solid #BABABA;
+}
+.abtLeadership {
+  background-image: url("../images/newBg.jpg");
+  margin: 15px 0;
+}
+.leadershipHeader {
+  background: #f79131;
+  padding: 15px 44px;
+  color: white;
+  font-size: 23px;
+}
+.textChanges {
+  color: white;
+}
+.leaderName {
+  margin: 15px 0 7px 0;
+  font-family: Raleway-Bold;
+}
