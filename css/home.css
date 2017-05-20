@@ -136,7 +136,7 @@ a {
    z-index: -1;
 }
 .yellowBg {
-  background: #FF9200;
+  background: #fa9402;
 }
 
 .footer-main{
@@ -261,8 +261,6 @@ a {
 }
 .film_roll_wrapper img {
     border: 10px solid white;
-    box-shadow: 7px 7px 15px #777;
-    margin-left: 5px;
     margin-right: 5px;
     transition: all 1s ease;
 }
@@ -327,3 +325,24 @@ a {
   background-position: top center;
   padding-bottom: 300px;
 }
+@media screen and (min-width:768px) {
+
+  .show-div{
+    display: block !important;
+  }
+  .hide-div{
+    display: none;
+  }
+}
+ @media screen and (max-width:767px) {
+   .show-div{
+     display: none !important;
+   }
+   .hide-div{
+     display: block;
+   }
+ }
+
+/*.film_roll_child{
+  margin-right: 10px !important;
+}*/
