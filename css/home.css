@@ -136,7 +136,7 @@ a {
    z-index: -1;
 }
 .yellowBg {
-  background: #F79131;
+  background: #FF9200;
 }
 
 .footer-main{
@@ -315,4 +315,15 @@ a {
     .knowMore {
       margin-bottom: 15px;
     }
+    .latestBg{
+      padding-bottom: 50px;
+    }
+}
+
+.latestBg {
+  background-image: url('../images/bgimg.png');
+  background-repeat: no-repeat;
+  background-size: initial;
+  background-position: top center;
+  padding-bottom: 300px;
 }
