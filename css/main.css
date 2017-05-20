@@ -257,3 +257,10 @@
 .tech-background{
   min-height: 500px;
 }
+.footerLinks{
+  padding-bottom: 5px;
+  text-decoration: none !important;
+}
+.footerLinks:hover{
+  color: #f79131 !important;
+}
