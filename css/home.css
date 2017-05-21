@@ -152,7 +152,7 @@ a {
   font-size:12px;
 }
 .footer_content{
-  padding-top:20px;
+  padding-top:35px;
   width:13%;
   float:left;
   padding-left:5px;
@@ -174,18 +174,31 @@ a {
   position: absolute;
   right: 30px;
 }
-.contact_label{display:block;font-size:14px;padding-top:15px;padding-left:10px;}
-.contact_email{display:block;font-size:14px;padding-left:10px;}
+.contact_label{display:block;font-size:14px;padding-top:15px;padding-left:15px;}
+.contact_email{display:block;font-size:14px;padding-left:15px;}
 .footer_followus{height:53px;background:black;margin-top: 17px;}
-.followus{color:white;font-size:15px;display:block;padding:10px 0 7px 10px;;font-weight: 600;}
+.followus{color:white;font-size:15px;display:block;padding:10px 0 7px 15px;;font-weight: 600;}
 .copyright_footer{height:50px;color:white;background:black;display: -webkit-box;width:100%;font-size: 15px}
 .main_footer{background:#1A5B83;min-height:190px;color:white;text-align: -webkit-auto;display: flex;}
 
 @media (max-width:800px){
   .footer_content{
-    width:100% !important;
+    width:50% !important;
     text-align: center;
     padding-left:5px;
+  }
+  .linksTo{
+    padding-right: 20px;
+  }
+  .contact_label,.contact_email,.footer_followus{
+    text-align: center;
+  }
+
+  .foot{
+    padding: 0;
+  }
+  .footer2{
+    width:100% !important;
   }
   .footer_content_demo{
     display: none;
@@ -339,6 +352,25 @@ a {
   .desk-div{
     display: block;
   }
+  .paragraph_home{
+    background: rgba(247, 145, 49, 0.65);
+    position: sticky;
+    height: 110px;
+    max-width: 900px;
+    margin-left: 1%;
+    border-left: 20px solid #034A77;
+    line-height: 25px !important;
+    font-size: 30px !important;
+  }
+  .flex-caption{
+    margin-top: -110px !important;
+    padding:1% 0% 0% 2% !important;
+  }
+  .span-font{
+    font-size: 20px !important;
+    margin-top: 5px;
+  }
+
 }
  @media screen and (max-width:767px) {
    .show-div{
@@ -353,8 +385,34 @@ a {
    .desk-div{
      display: none;
    }
+   .paragraph_home{
+     background: rgba(247, 145, 49, 0.65);
+     position: sticky;
+     height: 110px;
+     max-width: 900px;
+     margin-left: 1%;
+     border-left: 20px solid #034A77;
+     line-height: 20px !important;
+     font-size: 20px !important;
+   }
+   .flex-caption{
+     margin-top: -110px !important;
+     padding:1% 0% 0% 2% !important;
+   }
+   .span-font{
+     font-size: 17px !important;
+     margin-top: 5px;
+   }
  }
 
 /*.film_roll_child{
   margin-right: 10px !important;
 }*/
+
+
+.slid-imge{
+  width: 30px !important;
+  height: 15px !important;
+  margin-left: 8px;
+  margin-top: 5px;
+}
