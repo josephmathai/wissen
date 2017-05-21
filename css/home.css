@@ -123,7 +123,7 @@ a {
 .nb{
      box-shadow: -39px -35px 24px -35px rgba(0,0,0,0.75);
 }
-.nb::after {
+.nb:after {
    content: '';
    position: absolute;
    width: 940%;
@@ -327,8 +327,20 @@ a {
       margin-bottom: 15px;
     }
     .latestBg{
-      padding-bottom: 50px;
+      padding-bottom: 62px !important;
     }
+	.testimonial{
+    font-size: 23px;
+    line-height: 29px;
+	text-align:center;
+
+	}
+	.whoWeAre{
+		padding-bottom: 20px !important;
+		font-size: 44px !important;
+		padding-top: 12px !important;
+        text-align: center !important;
+	}
 }
 
 .latestBg {
@@ -361,6 +373,9 @@ a {
     border-left: 20px solid #034A77;
     line-height: 25px !important;
     font-size: 30px !important;
+  }
+    _::-webkit-full-page-media, _:future, :root .paragraph_home {
+     background-color:rgba(247, 145, 49, 0.65) !important;
   }
   .flex-caption{
     margin-top: -110px !important;
@@ -403,6 +418,9 @@ a {
      font-size: 17px !important;
      margin-top: 5px;
    }
+      _::-webkit-full-page-media, _:future, :root .paragraph_home {
+     background-color:rgba(247, 145, 49, 0.65) !important;
+  }
  }
 
 /*.film_roll_child{
@@ -415,4 +433,26 @@ a {
   height: 15px !important;
   margin-left: 8px;
   margin-top: 5px;
+}
+
+
+.corner{
+    width: 220px;
+    height: 0px;
+    border-top: 40px solid white;
+    border-right: 40px solid transparent;
+}
+.kiru{
+    width: 220px;
+    height: 220px;
+    background-color: white;
+}
+.corner-head{
+	font-size: 19px; 
+	color: #000000; 
+	padding: 15px 10px 0px 10px;
+	position:absolute;
+	bottom:14%;
+	width:220px;
+	text-align:center;
 }
