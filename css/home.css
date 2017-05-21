@@ -333,6 +333,12 @@ a {
   .hide-div{
     display: none;
   }
+  .mobile-div{
+    display: none;
+  }
+  .desk-div{
+    display: block;
+  }
 }
  @media screen and (max-width:767px) {
    .show-div{
@@ -340,6 +346,12 @@ a {
    }
    .hide-div{
      display: block;
+   }
+   .mobile-div{
+     display: block;
+   }
+   .desk-div{
+     display: none;
    }
  }
 
