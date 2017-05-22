@@ -136,7 +136,7 @@ a {
    z-index: -1;
 }
 .yellowBg {
-  background: #f79131;
+  background: #f89500;
 }
 
 .footer-main{
@@ -442,10 +442,11 @@ a {
     width: 220px;
     height: 220px;
     background-color: white;
+    box-shadow: -4px -3px 17px -1px rgba(0,0,0,0.75);
 }
 .corner-head{
-	font-size: 19px; 
-	color: #000000; 
+	font-size: 19px;
+	color: #000000;
 	padding: 15px 10px 0px 10px;
 	position:absolute;
 	bottom:14%;
