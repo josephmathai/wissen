@@ -52,3 +52,14 @@
     padding-top: 18px !important;
   }
 }
+
+.career_oppurtunities{
+  position: absolute;
+  text-align: center;
+  display: block;
+  width:100%;
+  top: 35%;
+  color: white;
+  font-size: 42px;
+
+}
