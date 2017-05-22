@@ -27,6 +27,9 @@
   color: #f79131 !important;
   padding: 12px 32px !important;
 }
+.flex-direction-nav a:before {
+  color: #f79131 !important;
+}
 .customLink:hover {
   color: white !important;
 }
@@ -37,8 +40,20 @@
 .toggleAdjust{
   margin-top: 16px;
 }
+.mainLogoAdj {
+  height: 50px;
+}
+ol {
+  display: none !important;
+}
 
 @media screen and (max-width: 767px) {
+  .header-logo{
+    height: 60px !important;
+  }
+  .mainLogoAdj {
+    height: 32px;
+  }
   .wssNav {
     min-height: 60px;
   }
@@ -54,6 +69,7 @@
   }
 }
 @media (min-width:768) and (max-width: 992px) {
+
   .wssNav {
     min-height: 60px;
   }
