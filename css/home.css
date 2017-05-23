@@ -188,7 +188,7 @@ a {
 .contact_email{display:block;font-size:14px;}
 .footer_followus{height:60px;background:black;margin-top: 17px;}
 .followus{color:white;font-size:15px;display:block;padding:10px 0 0px 15px;;font-weight: 600;}
-.copyright_footer{height:50px;color:white;background:black;display: -webkit-box;width:100%;font-size: 15px}
+.copyright_footer{height:50px;color:white;background:black;display: inline-block;;width:100%;font-size: 15px;text-align:center;padding:15px 0px ;}
 .main_footer{background:#1A5B83;min-height:190px;color:white;text-align: -webkit-auto;display: flex;}
 
 @media (max-width:800px){
@@ -525,4 +525,9 @@ a {
 	.paragraph_home{
 		min-height:94px !important;
 	}
+}
+
+.display-in{
+  display: inline-block;
+  text-decoration: none !important;
 }
