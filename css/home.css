@@ -480,13 +480,13 @@ a {
 
 
 .corner{
-    width: 220px;
+    width: 230px;
     height: 0px;
     border-top: 40px solid white;
     border-right: 40px solid transparent;
 }
 .kiru{
-    width: 220px;
+    width: 230px;
     height: 220px;
     background-color: white;
     box-shadow: -4px -3px 17px -1px rgba(0,0,0,0.75);

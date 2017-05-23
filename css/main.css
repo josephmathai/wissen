@@ -234,15 +234,27 @@ ol {
   color: white;
 }
 }
-
+.card-lghead{
+  font-size: 14px;
+  text-align: left;
+  display: block;
+  padding-top: 8px;
+}
+.card-mainhead{
+  text-align: left !important;
+  bottom: 10% !important;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
 .text_head5{
-  font-size: 15px;
+  font-size: 15px !important;
   color: #000000;
-  padding-top: 7px;
-  padding-left:10px;
-  text-align:justify;
-  width:200px;
-  display:block
+  padding-top: 7px !important;
+  padding-left:10px !important;
+  text-align:justify !important;
+  display:block;
+  bottom: 12% !important;
 }
 .line-div {
     height: 5px;
