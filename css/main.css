@@ -261,9 +261,10 @@ ol {
 .navbar {
     margin-bottom: 0px !important;
 }
-
-.dropdown:hover > .dropdown-menu {
-    display: block;
+@media screen and (min-width:1023px) {
+    .dropdown:hover > .dropdown-menu {
+        display: block;
+    }
 }
 
 .navbar-default .navbar-toggle{
