@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="../css/main.css" />
   <link rel="stylesheet" href="../css/home.css" />
   <link rel="stylesheet" href="../css/animate.css" />
+  <link rel="stylesheet" href="../css/font-awesome.css" />
   <link rel="stylesheet" href="../css/slick.css" />
   <link rel="stylesheet" href="../css/industries.css" />
   <link rel="stylesheet" href="../css/videoslide.css" />
@@ -23,50 +24,76 @@
 
 <body class="bodyStyle">
   <div class="col-xs-12 noPadding wow fadeInDown">
-    <div class="navbar navbar-custom navbar-default navbar-fixed-top">
-   <div class="navbar-header">
-     <a class="header-logo">
-       <img class="header-image" src="../images/Logo.png" height="50px;">
-     </a>
-        <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </a>
-      </div>
-      <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Home</span></a>
+    <div class="col-xs-12 noPadding wow fadeInDown">
+      <div class="navbar navbar-custom navbar-default navbar-static-top" style="position:fixed;width:100%;">
+        <div class="navbar-header">
+          <a class="header-logo">
+            <img  src="../images/Logo.png" class="mainLogoAdj">
+          </a>
+          <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" href="#">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Home</span></a>
 
               <ul class="dropdown-menu">
                 <div class="triangle"></div>
-                <li><a href="../index.html">Who we are</a></li>
-                <li><a href="../index.html">What's new</a></li>
-                <li><a href="../index.html">Industries</a></li>
-                <li><a href="../index.html">Technology parctise</a></li>
-                <li style="border-bottom:none;"><a href="../index.html">Testimonials</a></li>
+                <li><a href="../index.html#whoarewe" class="hoverLinks">Who we are</a></li>
+                <li><a href="../index.html#whatsnew" class="hoverLinks">What's new</a></li>
+                <li><a href="../index.html#industries" class="hoverLinks">Industries</a></li>
+                <li><a href="../index.html#technolgypractice" class="hoverLinks">Technology practise</a></li>
+                <li style="border-bottom:none;" class="hoverLinks"><a href="../index.html#testimonial" class="hoverLinks">Testimonials</a></li>
               </ul>
             </li>
-            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="bankingfinanciaL3.html">Industries</span></a>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="Industries/bankingfinanciaL3.html">Industries</span></a>
 
               <ul class="dropdown-menu">
                 <div class="triangle"></div>
-                <li><a href="industries.html">Industries</a></li>
-                <li><a href="banking-financial.html">Banking & Financial</a></li>
-                <li><a href="telecom.html">Telecom</a></li>
-                <li style="border-bottom:none;"><a href="healthcare.html">Healthcare</a></li>
+                <li><a href="industries.html" class="hoverLinks">Industries</a></li>
+                <li><a href="banking-financial.html" class="hoverLinks">Banking & Financial</a></li>
+                <li><a href="telecom.html" class="hoverLinks">Telecom</a></li>
+                <li style="border-bottom:none;"><a href="healthcare.html" class="hoverLinks">Healthcare</a></li>
               </ul>
             </li>
-            <li><a href="#">Technology</a></li>
-            <li><a href="#">Company</a></li>
-            <li><a href="#">Career</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="bankingfinanciaL3.html">Technology</span></a>
+              <ul class="dropdown-menu">
+                <div class="triangle"></div>
+                <li><a href="../technologies/digital-experience.html" class="hoverLinks">Digital Experience</a></li>
+                <li><a href="../technologies/datascience.html" class="hoverLinks">Data Science</a></li>
+                <li><a href="../technologies/tech_practice.html" class="hoverLinks">Tech Practice</a></li>
+                <li style="border-bottom:none;"><a href="../technologies/distributed-development.html" class="hoverLinks">Distributed Development</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="../career/career.html">Company</span></a>
+              <ul class="dropdown-menu">
+                <div class="triangle"></div>
+                <li  ><a href="../company/about.html" class="hoverLinks">About</a></li>
+                <li><a href="../company/leadership.html" class="hoverLinks">Leadership</a></li>
+                <li><a href="../company/patners.html" class="hoverLinks">Parnters</a></li>
+                <li style="border-bottom:none;"><a href="../company/blog.html" class="hoverLinks">Blog</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="../career/career.html">Career</span></a>
+              <ul class="dropdown-menu">
+                <div class="triangle"></div>
+                <li><a href="../career/career.html" class="hoverLinks">Career</a></li>
+                <li><a href="../career/jobsearch.html" class="hoverLinks">Current Opportunities</a></li>
+                <li style="border-bottom:none;"><a href="../career/workingwissen.html" class="hoverLinks">Working For Wissen</a></li>
+              </ul>
+            </li>
             <li><a href="#">Contact</a></li>
-        </ul>
+          </ul>
+        </div>
       </div>
-  </div>
 
 <div class="col-xs-12 main-div noPadding" >
-  <div class="col-xs-12 noPadding"><img src="../images/banner-health.jpg" class="industry-banner">
+  <div class="col-xs-12 noPadding">
+    <img src="../images/banner-health.jpg" class="industry-banner desk-div">
+    <img src="../images/mobile-health.jpg" class="industry-banner mobile-div">
     <div class="industry-sublabel industry-health" style="bottom:-5px;"><h2 class="health-heading"><span style="color: #ffffff;">Healthcare</span></h2></div>
   </div>
 </div>
@@ -102,42 +129,52 @@
   <div class="col-xs-12 col-sm-12 col-md-12 slider-demo">
 
     <div class="slider col-xs-12">
-      <div class="wpb_raw_code wpb_content_element wpb_raw_html col-xs-12 col-sm-12 col-md-4 noPadding" >
-        <div class="wpb_wrapper">
-          <div class="nb">
-            <a href="" style="text-decoration:none">
-              <img class="bimg" src="../images/Project_1.jpg" style="width: 100%;height: 190px;">
-              <h5 class="text_head5">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h5></a>
+      <div class="col-md-4 col-sm-4 col-xs-12" style="text-align:center;">
+         <a href="" style="text-decoration:none;display:inline-block;">
+            <div class="kiru"><img class="bimg" src="../images/Digital.jpg" style="width: 100%;height:170px;"/>
             </div>
-          </div>
-        </div>
-        <div class="wpb_raw_code wpb_content_element wpb_raw_html col-xs-12 col-sm-12 col-md-4 noPadding" >
-          <div class="wpb_wrapper">
-            <div class="nb">
-              <a href="" style="text-decoration:none">
-                <img class="bimg" src="../images/Project_2.jpg" style="width: 100%;height: 190px;">
-                <h5 class="text_head5">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h5></a>
-              </div>
+            <div class="corner">
+              <h5 class="corner-head card-mainhead">FINANCE ANALYTICS
+               <span class="card-lghead"><span style="padding-right:5px;">On</span><span>06 May 2017</span></span>
+              </h5>
             </div>
-          </div>
-          <div class="wpb_raw_code wpb_content_element wpb_raw_html col-xs-12 col-sm-12 col-md-4 noPadding" >
-            <div class="wpb_wrapper">
-              <div class="nb">
-                <a href="" style="text-decoration:none">
-                  <img class="bimg" src="../images/Project_3.jpg" style="width: 100%;height: 190px;">
-                  <h5 class="text_head5">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h5></a>
-                </div>
-              </div>
+        </a>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-12" style="text-align:center;">
+         <a href="" style="text-decoration:none;display:inline-block;">
+            <div class="kiru"><img class="bimg" src="../images/RiskReg.jpg" style="width: 100%;height:170px;"/>
             </div>
-            <div class="wpb_raw_code wpb_content_element wpb_raw_html col-xs-12 col-sm-12 col-md-4 noPadding" >
-              <div class="wpb_wrapper">
-                <div class="nb">
-                  <a href="" style="text-decoration:none">
-                    <img class="bimg" src="../images/image1.jpg" style="width: 100%;height: 190px;">
-                    <h5 class="text_head5">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h5></a>
-                  </div>
-                </div>
-              </div>
+            <div class="corner">
+              <h5 class="corner-head card-mainhead">COMPLIANCE
+               <span class="card-lghead"><span style="padding-right:5px;">On</span><span>06 May 2017</span></span>
+              </h5>
+            </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 col-sm-4 col-xs-12" style="text-align:center;">
+         <a href="" style="text-decoration:none;display:inline-block;">
+            <div class="kiru"><img class="bimg" src="../images/CapMar.jpg" style="width: 100%;height:170px;"/>
+            </div>
+            <div class="corner">
+              <h5 class="corner-head card-mainhead">TRADE MANAGEMENT
+               <span class="card-lghead"><span style="padding-right:5px;">On</span><span>06 May 2017</span></span>
+              </h5>
+            </div>
+        </a>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-12" style="text-align:center;">
+         <a href="" style="text-decoration:none;display:inline-block;">
+            <div class="kiru"><img class="bimg" src="../images/Banking.jpg" style="width: 100%;height:170px;"/>
+            </div>
+            <div class="corner">
+              <h5 class="corner-head card-mainhead " data-toggle="tooltip" data-placement="top" title="IMPLEMENTATION OF FIN CRIME AND COMPLIANCE MANAGEMENT SOLUTION">
+                IMPLEMENTATION OF FIN CRIME AND COMPLIANCE MANAGEMENT SOLUTION
+               <span class="card-lghead"><span style="padding-right:5px;">On</span><span>06 May 2017</span></span>
+              </h5>
+            </div>
+        </a>
+      </div>
             </div>
 
 
@@ -148,74 +185,75 @@
 
 
     <div class="col-xs-12" style="padding:0px">
-
-    <div class="col-xs-12 noPadding main_footer">
-      <div class="col-md-12 foot">
-        <div class="footer_content">Home
-          <ul class="footer-main">
-            <li class="footerLinks"><a href="#" class="footerLinks">Who you are</a></li>
-            <li class="footerLinks"><a href="#" class="footerLinks">Whats's new</a></li>
-            <li class="footerLinks"><a href="#" class="footerLinks">Industries</a></li>
-            <li class="footerLinks"><a href="#" class="footerLinks">Technology practice</a></li>
-            <li class="footerLinks"><a href="#" class="footerLinks">Testimonials</a></li>
-          </ul>
-        </div>
-        <div class="footer_content" style="padding-left: 20px;">Company
-          <ul class="footer-main">
-            <li class="footerLinks"><a href="#" class="footerLinks">About</a></li>
-            <li class="footerLinks"><a href="#" class="footerLinks">Leadership</a></li>
-            <li class="footerLinks"><a href="#" class="footerLinks">Partners</a></li>
-            <li class="footerLinks"><a href="#" class="footerLinks">Testimonials</a></li>
-            <li class="footerLinks"><a href="#" class="footerLinks">Blog</a></li>
-          </ul>
-        </div>
-        <div class="footer_content">Industries
-          <ul class="footer-main">
-            <li class="footerLinks"><a href="#" class="footerLinks">Banking & Financial</a></li>
-            <li class="footerLinks"><a href="#" class="footerLinks">Telecom</a></li>
-            <li class="footerLinks"><a href="#" class="footerLinks">Healthcare</a></li>
-          </ul>
-        </div>
-        <div class="footer_content">Career
-          <ul class="footer-main">
-            <li class="footerLinks"><a href="#" class="footerLinks">Job Search</a></li>
-            <li class="footerLinks"><a href="#" class="footerLinks">Wisson work Culture</a></li>
-            <li class="footerLinks"><a href="#" class="footerLinks">Employee Testmonials</a></li>
-          </ul>
-        </div>
-        <div class="footer_content footer2" >Technology & Practice
-          <ul class="footer-main">
-            <li class="footerLinks"><a href="#" class="footerLinks">Distributed Application</a></li>
-            <li class="footerLinks"><a href="#" class="footerLinks">Development</a></li>
-            <li class="footerLinks"><a href="#" class="footerLinks">Datascience & Analytics</a></li>
-            <li class="footerLinks"><a href="#" class="footerLinks">Digital Expense</a></li>
-          </ul>
-        </div>
-
-
-
-        <div class="footer_contact">
-          <span class="contact_label">Contact US</span>
-          <span class="contact_email">xxxx@wissen.com</span>
-          <div class="footer_followus">
-            <span class="followus">Follow Us</span>
-            <div style="padding-left:15px">
-              <a href="#" class="linksTo"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-              <a href="#" class="linksTo"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-              <a href="#" class="linksTo"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-              <a href="#" class="linksTo"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-              <a href="#" class="linksTo"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-              <a href="#" class="linksTo"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-            </div>
+      <div class="col-xs-12 noPadding main_footer">
+        <div class="col-md-12 foot">
+          <div class="footer_content">Home
+            <ul class="footer-main">
+              <li class="footerLinks"><a href="../index.html#whoarewe" class="footerLinks">Who you are</a></li>
+              <li class="footerLinks"><a href="../index.html#whatsnew" class="footerLinks">Whats's new</a></li>
+              <li class="footerLinks"><a href="../index.html#industries" class="footerLinks">Industries</a></li>
+              <li class="footerLinks"><a href="../index.html#technolgypractice" class="footerLinks">Technology practice</a></li>
+              <li class="footerLinks"><a href="../index.html#testimonial" class="footerLinks">Testimonials</a></li>
+            </ul>
           </div>
-          <span class="contact_label">Discover our other Brand</span>
-          <span class="contact_email">wissen engage</span>
-        </div>
+          <div class="footer_content" style="padding-left: 20px;">Company
+            <ul class="footer-main">
+              <li class="footerLinks"><a href="../company/about.html" class="footerLinks">About</a></li>
+              <li class="footerLinks"><a href="../company/leadership.html" class="footerLinks">Leadership</a></li>
+              <li class="footerLinks"><a href="../company/patners.html" class="footerLinks">Partners</a></li>
+              <li class="footerLinks"><a href="../career/testimonial.html" class="footerLinks">Testimonials</a></li>
+              <li class="footerLinks"><a href="../company/blog.html" class="footerLinks">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer_content">Industries
+            <ul class="footer-main">
+              <li class="footerLinks"><a href="banking-financial.html" class="footerLinks">Banking & Financial</a></li>
+              <li class="footerLinks"><a href="telecom.html" class="footerLinks">Telecom</a></li>
+              <li class="footerLinks"><a href="healthcare.html" class="footerLinks">Healthcare</a></li>
+            </ul>
+          </div>
+          <div class="footer_content">Career
+            <ul class="footer-main">
+              <li class="footerLinks"><a href="../career/jobsearch.html" class="footerLinks">Job Search</a></li>
+              <li class="footerLinks"><a href="../career/workingwissen.html" class="footerLinks">Wisson work Culture</a></li>
+              <li class="footerLinks"><a href="../career/testimonial.html" class="footerLinks">Employee Testmonials</a></li>
+            </ul>
+          </div>
+          <div class="footer_content footer2" >Technology & Practice
+            <ul class="footer-main">
+              <li class="footerLinks"><a href="../technologies/distributed-development.html" class="footerLinks">Distributed Application</a></li>
+              <li class="footerLinks"><a href="../technologies/tech_practice.html" class="footerLinks">Development</a></li>
+              <li class="footerLinks"><a href="../technologies/datascience.html" class="footerLinks">Datascience & Analytics</a></li>
+              <li class="footerLinks"><a href="../technologies/digital-experience.html" class="footerLinks">Digital Experience</a></li>
+            </ul>
+          </div>
 
-      </div>
-    </div>
+
+
+          <div class="footer_contact">
+            <span class="contact_label">Contact US</span>
+            <span class="contact_email">xxxx@wissen.com</span>
+            <div class="footer_followus">
+              <span class="followus">Follow Us</span>
+              <div style="padding-left:15px">
+                <a href="#" class="linksTo"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#" class="linksTo"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#" class="linksTo"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                <a href="#" class="linksTo"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#" class="linksTo"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="#" class="linksTo"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <span class="contact_label">Discover our other Brand</span>
+            <span class="contact_email">wissen engage</span>
+          </div>
+
+        </div>
+    	</div>
 
   </div>
+  <div class="copyright_footer" >&copy;Copyright Wissen.All rights Reserved</div>
+
 
 
   <script src="../js/jquery.js"></script>
