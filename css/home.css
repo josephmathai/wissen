@@ -146,15 +146,18 @@ a {
 }
 
 .footer-main{
-    font-size:12px;
+    font-size:12px !important;
     padding-left: 0px;
     padding-top: 10px
+}
+.footerLinks{
+  color:#b3b3b3 !important;
 }
 .footer-main > li{
   display:block;
   text-align:left;
   padding-top:5px;
-  color:#b3b3b3;
+  color:#b3b3b3 !important;
   font-size:12px;
 }
 .footer_content{
@@ -523,4 +526,3 @@ a {
 		min-height:94px !important;
 	}
 }
-
