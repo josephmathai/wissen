@@ -48,6 +48,9 @@ ol {
 }
 
 @media screen and (max-width: 767px) {
+  .dropdown-menu {
+    margin-right: 15px
+  }
   .header-logo{
     height: 60px !important;
   }
