@@ -202,7 +202,7 @@ ol {
   -webkit-transition:.5s;
   transition:.5s;
 }
-.dropdown-menu > li > a:hover{
+.dropdown-menu > li > a:hover,.dropdown-menu > li > a:focus{
   background:transparent;
   color:#ff932a !important;
 }
@@ -235,7 +235,7 @@ ol {
     -webkit-transition:.5s;
     transition:.5s;
 }
-.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover{
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus{
   color: #ff932a !important;
 }
 }
