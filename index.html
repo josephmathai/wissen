@@ -705,6 +705,10 @@
       }).call(this);
     $(document).ready(function() {
       $('#fullpage').fullpage();
+      $(".dropdown-menu li a.hoverLinks").click(function () {
+          $(".dropdown-menu li a.hoverLinks").attr('style','color:#fff !important');
+          $(this).attr('style','color:#ff932a !important');
+      })
       var wow = new WOW({
         animateClass: 'animated',
         offset: 100,
