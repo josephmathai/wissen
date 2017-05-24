@@ -407,7 +407,7 @@ a {
     margin-top: 50px !important;
   }
   .paragraph_home{
-    background: rgba(247, 145, 49, 0.65);
+    background: rgba(247, 144, 49, 0.9);
     position: relative;
     max-width: 65%;
     margin-left: 1%;
@@ -418,7 +418,8 @@ a {
 
   .flex-caption{
     padding:1% 0% 0% 2% !important;
-	margin-top:-100px !important;
+	margin-top:-125px !important;
+    min-width: 700px;
   }
   .span-font{
     font-size: 20px !important;
@@ -444,8 +445,11 @@ a {
    .desk-div{
      display: none;
    }
+   .mobile-para-heading {
+       font-size: 1.5em;
+   }
    .paragraph_home{
-     background: rgba(247, 145, 49, 0.65);
+     background: rgba(247, 144, 49, 0.9);
      position: relative;
      max-width: 95%;
      margin-left: 1%;
@@ -475,7 +479,7 @@ a {
   width: 20px !important;
   height: 15px !important;
   margin-left: 8px;
-  margin-top: 5px;
+  margin-top: 8px;
 }
 
 
@@ -506,6 +510,12 @@ a {
 		margin-top:-94px !important;
 		width:90%;
 	}
+    .flex-caption-2 {
+        margin-top:-103px !important;
+    }
+    span.mobile-para-heading {
+        font-size: 0.9em;
+    }
 }
 @media (min-width:459px) and (max-width:767px){
 	.flex-caption{
@@ -525,9 +535,20 @@ a {
 	.paragraph_home{
 		min-height:94px !important;
 	}
+    .flex-caption{
+        margin-top:-103px !important;
+    }
 }
 
 .display-in{
   display: inline-block;
   text-decoration: none !important;
+}
+
+.para-heading {
+    font-size: 1.3em;
+}
+
+a.no-hover {
+    color: #fff !important;
 }

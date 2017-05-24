@@ -664,6 +664,7 @@ nav li.active a  { cursor: default; }
   color: #fff;
   text-shadow: 0 -1px 0 rgba(0,0,0,.3);
   margin-top: -69px;
+  line-height: 1.1em !important;
   transition: none;
   text-align: inherit;
   line-height: 35px;
