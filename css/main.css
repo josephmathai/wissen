@@ -112,7 +112,7 @@ ol {
     -webkit-transition:.5s;
     transition:.5s;
 }
-.navbar-default .navbar-nav > li > a:hover {
+.navbar-default .navbar-nav > li > a:hover,.navbar-default .navbar-nav > li > a.active {
     color: #ff932a !important;
 }
 @media (min-width:1000px) {
@@ -227,7 +227,7 @@ ol {
 }
 @media (max-width: 767px){
 .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #133855 !important;
+    color: white;
     padding-left: 10px;
     -o-transition:.5s;
     -ms-transition:.5s;
