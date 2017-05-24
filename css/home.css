@@ -516,6 +516,9 @@ a {
     span.mobile-para-heading {
         font-size: 0.9em;
     }
+    .slid-imge {
+        margin-top: 3px !important;
+    }
 }
 @media (min-width:459px) and (max-width:767px){
 	.flex-caption{
@@ -540,6 +543,9 @@ a {
     }
     .flex-caption-2{
         margin-top:-103px !important;
+    }
+    .slid-imge {
+        margin-top: 3px !important;
     }
 }
 
