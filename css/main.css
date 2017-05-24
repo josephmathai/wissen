@@ -6,9 +6,6 @@
   font-family: Raleway-Regular;
   background: white !important;
 }
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
-    color: white !important;
-}
 .bramdImg {
   width: 200px;
 }
@@ -41,10 +38,14 @@
   margin-top: 16px;
 }
 .mainLogoAdj {
-  height: 50px;
+  height: 37px;
 }
 ol {
   display: none !important;
+}
+
+.navbar-header {
+    max-height: 66px;
 }
 
 @media screen and (max-width: 767px) {
@@ -95,15 +96,16 @@ ol {
 }
 .navbar-custom{
   background: white;
-  box-shadow: 2px 0px 10px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.75);
   border:none;
+  top: 4px !important;
 }
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-    color: white;
+    color: #ff932a;
     background-color: transparent;
 }
 .navbar-default .navbar-nav > li > a {
-    color:#f79131;
+    color:#133855 !important;
     -o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
@@ -122,8 +124,8 @@ ol {
   }
   .nav{
     width: 60%;
-    margin-top: 30px;
-    background:  #034A77;
+    padding: 8px 36px;
+    float: right;
   }
 }
 .nav > li{
@@ -202,7 +204,7 @@ ol {
 }
 .dropdown-menu > li > a:hover{
   background:transparent;
-  color:white;
+  color:#ff932a !important;
 }
 .dropdown-menu > li {
  padding-top:5px;
@@ -225,7 +227,7 @@ ol {
 }
 @media (max-width: 767px){
 .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #f79131;
+    color: #133855 !important;
     padding-left: 10px;
     -o-transition:.5s;
     -ms-transition:.5s;
@@ -234,7 +236,7 @@ ol {
     transition:.5s;
 }
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover{
-  color: white;
+  color: #ff932a !important;
 }
 }
 .card-lghead{
