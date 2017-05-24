@@ -536,7 +536,10 @@ a {
 		min-height:94px !important;
 	}
     .flex-caption{
-        margin-top:-103px !important;
+        margin-top:-94px !important;
+    }
+    .flex-caption-2{
+        margin-top:-94px !important;
     }
 }
 
