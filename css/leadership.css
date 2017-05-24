@@ -18,12 +18,48 @@
 .leaderDescription {
   text-align: justify;
 }
+.smasllScreenPartnt {
+  display: none ;
+}
 @media screen and (max-width:768px){
+  .smlScreenAbotAdj {
+    padding: 15px;
+  }
+  .leadershipOuterAlign {
+    margin-left: 0 !important;
+  }
+  .aboutTestimonialBg {
+    padding: 0 !important
+  }
+  .aboutTestimonialHead  {
+    font-size: 31px !important;
+    display: block !important;
+  }
+  .leftCardAlign{
+    padding-left: 10px !important;
+  }
+  .rightCardAlign{
+    padding-right: 10px !important;
+  }
+  .centerPartnerSection {
+    border: none !important;
+  }
+  .smasllScreenPartnt {
+    display: block !important;
+    margin-bottom: 10px;
+  }
+  .largScreenPartnt {
+    display: none;
+  }
   .leaderImgAdj {
     margin-bottom: 15px;
   }
   .main-div{
     margin-top: 63px;
+  }
+  .abtTestImg {
+    width: 100%;
+    min-height: auto !important;
   }
   .leaderName {
     text-align: center;
@@ -93,4 +129,21 @@
   font-size: 45px;
   padding: 9px 38px;
   font-family: Raleway-SemiBold;
+  display: inline-block;;
+}
+.abtTstContent {
+  font-size: 13px;
+  padding: 15px;
+}
+.abtTestWrapper {
+  background: #EAEAEB;
+}
+.abtTestImg {
+  min-height: 150px
+}
+.leftCardAlign{
+  padding-left: 0px;
+}
+.rightCardAlign{
+  padding-right: 0px;
 }
