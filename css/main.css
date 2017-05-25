@@ -305,6 +305,6 @@ ol {
 .footerLinks:hover{
   color: #f79131 !important;
 }
-.navSmallScreen {
-  display: none !important;
+.nav > li > a.navSmallScreen {
+  display: none;
 }
