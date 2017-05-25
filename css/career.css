@@ -61,5 +61,14 @@
   top: 35%;
   color: white;
   font-size: 42px;
-
+}
+.carreer_BoxText {
+  color: white ;
+}
+.carrer_BoxBg{
+  background-image:url('../images/Box-1.jpg');
+  background-size:cover;
+  border: 10px solid white;
+  padding: 33px 60px;
+  min-height: 350px;
 }
