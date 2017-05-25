@@ -49,6 +49,12 @@ ol {
 }
 
 @media screen and (max-width: 767px) {
+  .navLinkToggle {
+    display: none !important;
+  }
+  .navSmallScreen {
+    display: block !important;
+  }
   .dropdown-menu {
     margin-right: 15px
   }
@@ -96,9 +102,10 @@ ol {
 }
 .navbar-custom{
   background: white;
-  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.75);
   border:none;
-  top: 4px !important;
+  top: 0px !important;
+  border-top: 5px solid #ff932a;
 }
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
     color: #ff932a;
@@ -267,6 +274,7 @@ ol {
     position: fixed;
     z-index: 1;
     width: 100%;
+    display: none;
 }
 .top-line {
     width: 100%;
@@ -296,4 +304,7 @@ ol {
 }
 .footerLinks:hover{
   color: #f79131 !important;
+}
+.navSmallScreen {
+  display: none !important;
 }
