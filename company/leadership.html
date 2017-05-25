@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../css/industries.css" />
     <link rel="stylesheet" href="../css/animate.css" />
     <link rel="stylesheet" href="../css/site.css" />
+    <link rel="stylesheet" href="../css/font-awesome.css" />
     <link rel="stylesheet" href="../css/leadership.css" />
     <link rel="stylesheet" href="../css/videoslide.css" />
     <link rel="stylesheet" href="../css/jquery.fullpage.css" />
@@ -99,9 +100,10 @@
 
         <div class="col-xs-12 main-div noPadding">
             <div class="col-xs-12 noPadding">
-                <img src="../images/industrybanner.jpg" class="industry-banner fullWidthImg">
+                <img src="../images/leadership.jpg" class="industry-banner fullWidthImg desk-div">
+                <img src="../images/mobileleadership.jpg" class="industry-banner fullWidthImg mobile-div">
                 <div class="industry-sublabel" style="bottom:-5px">
-                    <h2><span style="color: #ffffff;">Banking &amp; Finance</span></h2></div>
+                    <h2 class="health-heading"><span style="color: #ffffff;">Leadership</span></h2></div>
             </div>
         </div>
         <div class="col-xs-12 noPadding">
@@ -313,5 +315,19 @@
     </script>
 
 </body>
+<style>
+ .mobile-div{
+   margin-top: 0px !important;
+ }
 
+     @media screen and (max-width: 767px) {
+       .health-heading {
+           padding-top: 15px !important;
+       }
+       .leaderDescription {
+         padding-left: 15px;
+       }
+     }
+
+</style>
 </html>
