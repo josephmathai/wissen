@@ -387,7 +387,7 @@ a {
   background-repeat: no-repeat;
   background-size: initial;
   background-position: top center;
-  padding-bottom: 500px;
+  padding-bottom: 360px;
 }
 @media screen and (min-width:768px) {
 
@@ -415,17 +415,23 @@ a {
     line-height: 25px !important;
     font-size: 30px !important;
   }
+  .specail_Home {
+    width: 44% !important;
+  }
 
   .flex-caption{
     padding:1% 0% 0% 2% !important;
 	margin-top:-125px !important;
-    min-width: 700px;
+    min-width: 612px;
   }
   .span-font{
     font-size: 20px !important;
     margin-top: 5px;
   }
 
+}
+.knowMoreSlider {
+  font-family: Raleway-Bold;
 }
 .hoverLinks:hover{
   color: rgba(247, 145, 49, 0.65) !important;
@@ -507,7 +513,7 @@ a {
 
 @media screen and (max-width:480px){
 	.flex-caption{
-		margin-top:-94px !important;
+		margin-top:-102px !important;
 		width:90%;
 	}
     .flex-caption-2 {
@@ -539,7 +545,7 @@ a {
 		min-height:94px !important;
 	}
     .flex-caption{
-        margin-top:-94px !important;
+        margin-top:-102px !important;
     }
     .flex-caption-2{
         margin-top:-103px !important;
