@@ -101,7 +101,7 @@
                 <img src="../images/techBanner.jpg" class="industry-banner desk-div">
                 <img src="../images/mobiletech.jpg" class="industry-banner mobile-div">
                 <div class="industry-sublabel">
-                    <h2><span class="industry-sublabel-span" style="color: #ffffff;">Where We Have Deep Domain Expertise</span></h2></div>
+                    <h2 class="health-heading"><span class="industry-sublabel-span" style="color: #ffffff;">Where We Have Deep Domain Expertise</span></h2></div>
             </div>
         </div>
         <div class="col-xs-12 noPadding">
@@ -288,8 +288,13 @@ $(document).ready(function() {
     border-top: 50px solid white;
     border-right: 50px solid transparent;
 }
-.mobile-div{
-  margin-top: 0px !important;
-}
+
+    @media screen and (max-width: 767px) {
+      .health-heading {
+          padding-top: 10px !important;
+      }
+    }
+
+
 </style>
 </html>
