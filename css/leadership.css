@@ -96,7 +96,7 @@
   text-align: -webkit-center !important;
 }
 .knowMoreLink {
-  color:#f79131;
+  color:#f79131 !important;
   position: absolute;
   bottom: 20px;
   text-transform: uppercase;
