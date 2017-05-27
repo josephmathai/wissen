@@ -103,6 +103,32 @@
 
 
             </div>
+        <div class="col-xs-12 noPadding form-div">
+            <div role="form" lang="en-US" dir="ltr" class="col-xs-10 col-xs-offset-1 form">
+                <h2>Write to us</h2>
+                <form action="#" method="post" novalidate="novalidate" id="mail-form">
+                    <p>
+                        <label> Your Name (required)<br>
+                        <span class="your-name"><input type="text" name="your-name" value="" size="40" class="" aria-required="true" aria-invalid="false"></span> </label>
+                    </p>
+                    <p>
+                        <label> Your Email (required)<br>
+                        <span class="your-email"><input type="email" name="your-email" value="" size="40" class="" aria-required="true" aria-invalid="false"></span> </label>
+                    </p>
+                    <p>
+                        <label> Subject<br>
+                        <span class="your-subject"><input type="text" name="your-subject" value="" size="40" class="" aria-invalid="false"></span> </label>
+                    </p>
+                    <p>
+                        <label> Your Message<br>
+                        <span class="your-message"><textarea name="your-message" cols="40" rows="10" class="" aria-invalid="false"></textarea></span> </label>
+                    </p>
+                    <p>
+                        <button class="send-mail">Send</button><span class="ajax-loader"></span>
+                    </p>
+                </form>
+            </div>
+        </div>
 
 
             <div class="col-xs-12 noPadding main_footer">
@@ -183,6 +209,23 @@
         <script src="js/slick.min.js"></script>
         <script src="js/jquery.film_roll.js"></script>
         <script>
+            $("#mail-form").submit(function(e) {
+                $(".ajax-loader").css('visibility','visible')
+                var url = "path/to/your/script.php";
+
+                $.ajax({
+                    type: "POST",
+                    url: url,
+                    data: $("#mail-form").serialize(),
+                    success: function(data)
+                    {
+                        alert(data);
+                        $(".ajax-loader").css('visibility','hidden')
+                    }
+                });
+
+                e.preventDefault();
+            });
             (function() {
                 jQuery(function() {
                     this.film_rolls || (this.film_rolls = []);
