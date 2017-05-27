@@ -105,10 +105,10 @@
             </div>
         </div>
         <div class="col-xs-12 noPadding">
-            <div class="col-xs-12 cm-div">
+            <div class="col-xs-12 col-md-10 col-md-offset-1 cm-div">
+              <h2 class="industries-lg3">Services</h2>
                 <p class="cm-paragraph">
-                    I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.. I am text block. Click edit button to change this text. Lorem ipsum
-                    dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo..
+                  With our deep expertise in various cutting edge technologies as well as the business domains, Wissen is a true partner in our clients’ success.
                 </p>
                 <div class="col-xs-12 noPadding">
                     <h2 class="industries-lg3">Tech Practice</h2>
@@ -117,42 +117,54 @@
             </div>
             <div class="col-xs-12 noPadding tech-background">
                 <img src="../images/tecbackground.jpg" style="position:absolute;height:100%;width:100%;">
-                <div class="col-xs-12 noPadding" style="padding-top:40px;padding-bottom: 20px;">
+                <div class="col-xs-12 col-md-10 col-md-offset-1 noPadding" style="padding-bottom: 20px;">
                     <div class="col-md-4 col-sm-4 col-xs-12 " style="text-align: center;padding-top: 30px;">
-                        <a href="distributed-development.html" class="display-in">
+                        <a href="distributed-development.html" class="display-in cardView">
                             <div class="kiru"><img class="bimg" src="../images/Distributed-application-development.jpg" style="width: 100%;height: 190px;">
-                                <h3 style="font-size:20px;font-family:Raleway-Bold; color: #000000;padding-left:10px;padding-top:7px;padding-right:15px;text-align:center;">Distributed Application Development</h5>
+                                <h3 style="font-size:20px;font-family:Raleway-Medium; color: #000000;padding-left:10px;padding-top:7px;padding-right:15px;text-align:center;">Distributed Application Development</h5>
 
              </div>
              <div class="corner">
 
-               <span class="know-more">KNOW MORE <img style="vertical-align:baseline;" src="../images/Rightarrow.png"></span>
+               <span class="know-more">
+                 <span class="pull-left">KNOW MORE</span>
+                 <img style="vertical-align:baseline;" src="../images/Rightarrow.png" class="showArrowYellow pull-left">
+                 <img style="vertical-align:baseline;" src="../images/Rightarrow_white.png" class="showArrowWhite pull-left">
+               </span>
 
              </div>
           </a>
            </div>
            <div class="col-md-4 col-sm-4 col-xs-12 " style="text-align: center;padding-top: 30px;">
-                <a href="datascience.html" class="display-in" >
+                <a href="datascience.html" class="display-in cardView" >
                   <div class="kiru"><img class="bimg" src="../images/image3.jpg" style="width: 100%;height: 190px;">
-                    <h3 style="font-size:20px;font-family:Raleway-Bold; color: #000000;padding-left:10px;padding-top:7px;padding-right:15px;text-align:center;">DataScience & Analytics</h5>
+                    <h3 style="font-size:20px;font-family:Raleway-Medium; color: #000000;padding-left:10px;padding-top:7px;padding-right:15px;text-align:center;">DataScience & Analytics</h5>
 
                   </div>
                   <div class="corner">
 
-                    <span class="know-more">KNOW MORE <img style="vertical-align:baseline;" src="../images/Rightarrow.png"></span>
+                    <span class="know-more">
+                      <span class="pull-left">KNOW MORE</span>
+                      <img style="vertical-align:baseline;" src="../images/Rightarrow.png" class="showArrowYellow pull-left">
+                      <img style="vertical-align:baseline;" src="../images/Rightarrow_white.png" class="showArrowWhite pull-left">
+                    </span>
 
                   </div>
                </a>
                 </div>
                 <div class="col-md-4 col-sm-4 col-xs-12 " style="text-align: center;padding-top: 30px;">
-                     <a href="digital-experience.html" class="display-in" >
+                     <a href="digital-experience.html" class="display-in cardView" >
                        <div class="kiru"><img class="bimg" src="../images/Digital-Experience.jpg" style="width: 100%;height: 190px;">
-                         <h3 style="font-size:20px;font-family:Raleway-Bold; color: #000000;padding-left:10px;padding-top:7px;padding-right:15px;text-align:center;">Digital Experience</h5>
+                         <h3 style="font-size:20px;font-family:Raleway-Medium; color: #000000;padding-left:10px;padding-top:7px;padding-right:15px;text-align:center;">Digital Experience</h5>
 
                        </div>
                        <div class="corner">
 
-                         <span class="know-more">KNOW MORE <img style="vertical-align:baseline;" src="../images/Rightarrow.png"></span>
+                         <span class="know-more">
+                           <span class="pull-left">KNOW MORE</span>
+                           <img style="vertical-align:baseline;" src="../images/Rightarrow.png" class="showArrowYellow pull-left">
+                           <img style="vertical-align:baseline;" src="../images/Rightarrow_white.png" class="showArrowWhite pull-left">
+                         </span>
 
                        </div>
                     </a>
@@ -244,6 +256,23 @@
   <script src="../js/jquery.fullpage.js"></script>
 <script>
 $(document).ready(function() {
+
+  $(".cardView").mouseover(function(e){
+     $(this).find(".kiru").css("background-color","#f79131");
+     $(this).find(".corner").css("border-top","40px solid #f79131");
+     $(this).find(".know-more").css("color", "white");
+     $(this).find(".showArrowYellow").css("display", "none");
+     $(this).find(".showArrowWhite").css("display", "block");
+  });
+
+  $(".cardView").mouseout(function(){
+    $(this).find(".kiru").css("background-color","white");
+    $(this).find(".corner").css("border-top","40px solid white");
+    $(this).find(".know-more").css("color", "#f79131");
+    $(this).find(".showArrowYellow").css("display", "block");
+    $(this).find(".showArrowWhite").css("display", "none");
+  });
+
   $('li.dropdown').find('a').on('click', function() {
       window.location = $(this).attr('href');
   });
