@@ -101,13 +101,13 @@
                 <img src="../images/industrybanner.jpg" class="industry-banner desk-div">
                 <img src="../images/mobileindustry.jpg" class="industry-banner mobile-div">
                 <div class="industry-sublabel">
-                    <h2 class="health-heading"><span style="color: #ffffff;">Banking &amp; Finance</span></h2></div>
+                    <h2 class="health-heading" ><span style="color: #ffffff;">Banking &amp; Finance</span></h2></div>
             </div>
         </div>
-        <div class="col-xs-12">
-            <div class="col-xs-12 cm-div">
+        <div class="col-xs-12 col-md-10 col-md-offset-1 noPadding">
+            <div class="col-xs-12 cm-div noPadding">
                 <div class="col-xs-12 col-md-3 col-sm-4 cm-image-div"><img src="../images/CapitalMarkets.png" class="cm-image"></div>
-                <div class="col-xs-12 col-sm-8 col-md-9 ">
+                <div class="col-xs-12 col-sm-8 col-md-9">
                     <h3 class="cm-head">Capital Markets</h3>
                     <p class="cm-paragraph">
                         Wissen has a deep understanding of the domain and technologies involved in Capital Markets. We provide world class solutions to both the buy side and the sell side firms in areas that include Client Data tools, Trade Management, Broker Administration,
@@ -116,7 +116,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-xs-12 cb-div">
+            <div class="col-xs-12 cb-div noPadding">
                 <div class="col-xs-12 col-md-3 col-sm-4 cm-image-div"><img src="../images/CommercialBanking.png" class="cm-image"></div>
                 <div class="col-xs-12 col-sm-8 col-md-9 ">
                     <h3 class="cm-head">Commercial Banking</h3>
@@ -127,9 +127,9 @@
                     </p>
                 </div>
             </div>
-            <div class="col-xs-12 cb-div">
+            <div class="col-xs-12 cb-div noPadding">
                 <div class="col-xs-12 col-md-3 col-sm-4 cm-image-div"><img src="../images/Risk&Regulatorycompliance.png" class="cm-image"></div>
-                <div class="col-xs-12 col-sm-8 col-md-9 ">
+                <div class="col-xs-12 col-sm-8 col-md-9">
                     <h3 class="cm-head">Risk & Regulatory Compliance</h3>
                     <p class="cm-paragraph">
                         All forms of banking demand highest levels of compliance, in a rapidly evolving regulatory landscape. Wissen has worked in building top notch capabilities for Credit Risk, Market Risk, Liquidity Risk, Operational Risk, Regulatory Reporting etc. Our consultants
@@ -138,7 +138,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-xs-12 slider-main">
+        <div class="col-xs-12 col-md-10 col-md-offset-1 slider-main">
             <div class="col-xs-12 projects-slider">
                 <div class="projects-label">
                     <h2 class="project-head">Projects</h2></div>
@@ -148,7 +148,7 @@
 
 
                         <div class="col-md-4 col-sm-4 col-xs-12 noPadding" style="text-align:center;">
-                            <a href="Industries/telecom.html" style="text-decoration:none;display:inline-block;">
+                            <a href="Industries/telecom.html" style="text-decoration:none;display:inline-block;" class="cardView">
                                 <div class="kiru"><img class="bimg" src="../images/Digital.jpg" style="width: 100%;height:170px;" />
                                 </div>
                                 <div class="corner">
@@ -160,7 +160,7 @@
                         </div>
 
                         <div class="col-md-4 col-sm-4 col-xs-12 noPadding" style="text-align:center;">
-                            <a href="Industries/telecom.html" style="text-decoration:none;display:inline-block;">
+                            <a href="Industries/telecom.html" style="text-decoration:none;display:inline-block;" class="cardView">
                                 <div class="kiru"><img class="bimg" src="../images/RiskReg.jpg" style="width: 100%;height:170px;" />
                                 </div>
                                 <div class="corner">
@@ -172,7 +172,7 @@
                         </div>
 
                         <div class="col-md-4 col-sm-4 col-xs-12 noPadding" style="text-align:center;">
-                            <a href="Industries/telecom.html" style="text-decoration:none;display:inline-block;">
+                            <a href="Industries/telecom.html" style="text-decoration:none;display:inline-block;" class="cardView">
                                 <div class="kiru"><img class="bimg" src="../images/CapMar.jpg" style="width: 100%;height:170px;" />
                                 </div>
                                 <div class="corner">
@@ -183,7 +183,7 @@
                             </a>
                         </div>
                         <div class="col-md-4 col-sm-4 col-xs-12 noPadding" style="text-align:center;">
-                            <a href="Industries/telecom.html" style="text-decoration:none;display:inline-block;">
+                            <a href="Industries/telecom.html" style="text-decoration:none;display:inline-block;" class="cardView">
                                 <div class="kiru"><img class="bimg" src="../images/Banking.jpg" style="width: 100%;height:170px;" />
                                 </div>
                                 <div class="corner">
@@ -285,6 +285,16 @@
         $(document).ready(function() {
           $('li.dropdown').find('a').on('click', function() {
               window.location = $(this).attr('href');
+          });
+
+          $(".cardView").mouseover(function(e){
+             $(this).find(".kiru").css("background-color","#f79131");
+             $(this).find(".corner").css("border-top","40px solid #f79131");
+          });
+
+          $(".cardView").mouseout(function(){
+            $(this).find(".kiru").css("background-color","white");
+            $(this).find(".corner").css("border-top","40px solid white");
           });
 
             $('#fullpage').fullpage();

@@ -13,8 +13,11 @@
   bottom:-5px;
   left:5%;
 }
+.industry-sublabel > h2 {
+  font-size: 40px;
+}
 .cm-div{
-  padding:5% 5% 2% 5%;
+  padding:5% 2% 2% 2%;
 }
 .cm-image-div{
   text-align: center;
@@ -28,7 +31,7 @@
   color: black;
 }
 .cb-div{
-  padding:1% 5% 2% 5%;
+  padding:1% 0% 2% 0%;
 }
 .cm-paragraph{
   text-align: justify;
@@ -97,8 +100,6 @@
   }
   .projects-label{
     width: 92%;
-    top: -37px;
-
   }
   .industry-sublabel > h2{
     font-size: 18px;
@@ -134,7 +135,7 @@
 }
 
 .slider-main{
-  padding: 3%;
+  padding: 3% 0;
 }
 @media screen and (max-width:767px) {
   h3{
@@ -156,7 +157,7 @@
 }
 @media screen and (min-width:768px) {
   .industry-sublabel{
-    padding: 1% 23% 1% 2%;
+    padding: 1% 10% 1% 2%;
     left: 5%;
   }
   .projects-slider{
@@ -165,7 +166,7 @@
   }
   .industry-sublabel-span{
     display: block;
-    width: 140%;
+    /*width: 140%;*/
   }
 }
 .cvdrop{
