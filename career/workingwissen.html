@@ -186,82 +186,18 @@
                 </div>
             </div>
         </div>
-        <div class="col-xs-12" style="padding:0px">
-          <div class="col-xs-12 noPadding main_footer">
-              <div class="col-md-12 foot">
-                  <div class="footer_content">Home
-                      <ul class="footer-main">
-                          <li class="footerLinks"><a href="../index.html#whoarewe" class="footerLinks">Who you are</a></li>
-                          <li class="footerLinks"><a href="../index.html#whatsnew" class="footerLinks">Whats's new</a></li>
-                          <li class="footerLinks"><a href="../index.html#industries" class="footerLinks">Industries</a></li>
-                          <li class="footerLinks"><a href="../index.html#technolgypractice" class="footerLinks">Technology practice</a></li>
-                          <li class="footerLinks"><a href="../index.html#testimonial" class="footerLinks">Testimonials</a></li>
-                      </ul>
-                  </div>
-                  <div class="footer_content" style="padding-left: 20px;">Company
-                      <ul class="footer-main">
-                          <li class="footerLinks"><a href="../company/about.html" class="footerLinks">About</a></li>
-                          <li class="footerLinks"><a href="../company/leadership.html" class="footerLinks">Leadership</a></li>
-                          <li class="footerLinks"><a href="../company/patners.html" class="footerLinks">Partners</a></li>
-                          <li class="footerLinks"><a href="../career/testimonial.html" class="footerLinks">Testimonials</a></li>
-                          <li class="footerLinks"><a href="../company/blog.html" class="footerLinks">Blog</a></li>
-                      </ul>
-                  </div>
-                  <div class="footer_content">Industries
-                      <ul class="footer-main">
-                          <li class="footerLinks"><a href="../Industries/banking-financial.html" class="footerLinks">Banking & Financial</a></li>
-                          <li class="footerLinks"><a href="../Industries/telecom.html" class="footerLinks">Telecom</a></li>
-                          <li class="footerLinks"><a href="../Industries/healthcare.html" class="footerLinks">Healthcare</a></li>
-                      </ul>
-                  </div>
-                  <div class="footer_content">Career
-                      <ul class="footer-main">
-                          <!-- <li class="footerLinks"><a href="../career/jobsearch.html" class="footerLinks">Job Search</a></li> -->
-                          <li class="footerLinks"><a href="../career/workingwissen.html" class="footerLinks">Wisson work Culture</a></li>
-                      </ul>
-                  </div>
-                  <div class="footer_content footer2">Services & Technologies
-                      <ul class="footer-main">
-                          <li class="footerLinks"><a href="../technologies/distributed-development.html" class="footerLinks">Distributed Application</a></li>
-                          <li class="footerLinks"><a href="../technologies/tech_practice.html" class="footerLinks">Development</a></li>
-                          <li class="footerLinks"><a href="../technologies/datascience.html" class="footerLinks">Datascience & Analytics</a></li>
-                          <li class="footerLinks"><a href="../technologies/digital-experience.html" class="footerLinks">Digital Experience</a></li>
-                      </ul>
-                  </div>
-
-
-
-                  <div class="footer_contact">
-                      <span class="contact_label">Contact US</span>
-                      <span class="contact_email">contactus@wissen.com</span>
-                      <div class="footer_followus">
-                          <span class="followus">Follow Us</span>
-                          <div style="padding-left:15px">
-                              <a target="_blank" href="#" class="linksTo"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                              <a target="_blank" href="https://twitter.com/wissentechno" class="linksTo"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                              <a target="_blank" href="#" class="linksTo"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                              <a target="_blank" href="https://www.linkedin.com/company-beta/13226107/" class="linksTo"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                              <a target="_blank" href="#" class="linksTo"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-                          </div>
-                      </div>
-                      <span class="contact_label">Discover our other Brand</span>
-                      <span class="contact_email">wissen engage</span>
-                  </div>
-
-              </div>
-          </div>
-
-        </div>
-        <div class="copyright_footer">&copy;Copyright Wissen.All rights Reserved</div>
+          <div w3-include-html="../company/footer.html"></div>
     </div>
 
 
     <script src="../js/jquery.js"></script>
     <script src="../js/bootstrap.js"></script>
+    <script src="../js/w3.js"></script>
     <script src="../js/slick.min.js"></script>
     <script src="../js/wow.js"></script>
     <script src="../js/jquery.fullpage.js"></script>
     <script>
+      w3.includeHTML();
         $(document).ready(function() {
           $('li.dropdown').find('a').on('click', function() {
               window.location = $(this).attr('href');
