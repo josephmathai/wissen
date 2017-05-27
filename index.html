@@ -116,7 +116,7 @@
                         </li> -->
                         <li>
                             <img src="images/image2.jpg" />
-                            <div class="flex-caption paragraph_home specail_Home col-xs-12"><span class="para-heading">Wissen Work Culture</span>
+                            <div class="flex-caption paragraph_home specail_Home col-xs-12"><span class="para-heading">Our Culture</span>
                                 <div class="span-font col-xs-12 noPadding">Where people prosper, and career bloom</div>
                                 <div class="span-font col-xs-12 knowMoreSlider noPadding"><a href="technologies/tech_practice.html" class="no-hover"><span class="pull-left"> KNOW MORE</span><img src="images/Rightarrow_white.png" class="slid-imge pull-left"></a></div>
                             </div>
@@ -294,7 +294,7 @@
             </div> -->
 
                         <div class="col-md-4 col-sm-4 col-xs-12">
-                            <a href="Industries/banking-financial.html" style="text-decoration:none;">
+                            <a href="Industries/banking-financial.html" style="text-decoration:none;" class="cardView">
                                 <div class="kiru"><img src="images/Banking-Financial.jpg" style="width:100%;">
                                 </div>
                                 <div class="corner">
@@ -303,7 +303,7 @@
                             </a>
                         </div>
                         <div class="col-md-4 col-sm-4 col-xs-12">
-                            <a href="Industries/telecom.html" style="text-decoration:none;">
+                            <a href="Industries/telecom.html" style="text-decoration:none;" class="cardView">
                                 <div class="kiru"><img src="images/Telecom.jpg" style="width:100%;">
                                 </div>
                                 <div class="corner">
@@ -312,7 +312,7 @@
                             </a>
                         </div>
                         <div class="col-md-4 col-sm-4 col-xs-12">
-                            <a href="Industries/healthcare.html" style="text-decoration:none;">
+                            <a href="Industries/healthcare.html" style="text-decoration:none;" class="cardView">
                                 <div class="kiru"><img src="images/Healthcare.jpg" style="width:100%;">
                                 </div>
                                 <div class="corner">
@@ -325,7 +325,7 @@
                         <div class="flexslider-2">
                             <ul class="slides">
                                 <li style="text-align:center;">
-                                    <a href="Industries/banking-financial.html" style="text-decoration:none;display:inline-block;">
+                                    <a href="Industries/banking-financial.html" style="text-decoration:none;display:inline-block;" class="cardView">
                                         <div class="kiru"><img src="images/Banking-Financial.jpg" style="width:100%;">
                                         </div>
                                         <div class="corner">
@@ -334,7 +334,7 @@
                                     </a>
                                 </li>
                                 <li style="text-align:center;">
-                                    <a href="Industries/telecom.html" style="text-decoration:none;display:inline-block;">
+                                    <a href="Industries/telecom.html" style="text-decoration:none;display:inline-block;" class="cardView">
                                         <div class="kiru"><img src="images/Telecom.jpg" style="width:100%;">
                                         </div>
                                         <div class="corner">
@@ -343,7 +343,7 @@
                                     </a>
                                 </li>
                                 <li style="text-align:center;">
-                                    <a href="Industries/healthcare.html" style="text-decoration:none;display:inline-block;">
+                                    <a href="Industries/healthcare.html" style="text-decoration:none;display:inline-block;" class="cardView">
                                         <div class="kiru"><img src="images/Healthcare.jpg" style="width:100%;">
                                         </div>
                                         <div class="corner">
@@ -362,16 +362,16 @@
                     </div>
                     <div class="col-xs-12 show-div">
                         <div class="col-md-4 col-sm-4 col-xs-12">
-                            <a href="technologies/distributed-development.html" style="text-decoration:none;">
+                            <a href="technologies/distributed-development.html" style="text-decoration:none;" class="cardView">
                                 <div class="kiru"><img src="images/Distributed-application-development.jpg" style="width:100%;">
                                 </div>
                                 <div class="corner">
-                                    <h5 class="corner-head">Distributed Application Development</h5>
+                                    <h5 class="corner-head" style="bottom:8%">Distributed Application Development</h5>
                                 </div>
                             </a>
                         </div>
                         <div class="col-md-4 col-sm-4 col-xs-12">
-                            <a href="technologies/datascience.html" style="text-decoration:none;">
+                            <a href="technologies/datascience.html" style="text-decoration:none;" class="cardView">
                                 <div class="kiru"><img src="images/image3.jpg" style="width:100%;">
                                 </div>
                                 <div class="corner">
@@ -380,7 +380,7 @@
                             </a>
                         </div>
                         <div class="col-md-4 col-sm-4 col-xs-12">
-                            <a href="technologies/digital-experience.html" style="text-decoration:none;">
+                            <a href="technologies/digital-experience.html" style="text-decoration:none;" class="cardView">
                                 <div class="kiru"><img src="images/Digital-Experience.jpg" style="width:100%;">
                                 </div>
                                 <div class="corner">
@@ -714,6 +714,17 @@
 
             }).call(this);
             $(document).ready(function() {
+
+              $(".cardView").mouseover(function(e){
+                 $(this).find(".kiru").css("background-color","#f79131");
+                 $(this).find(".corner").css("border-top","40px solid #f79131");
+              });
+
+              $(".cardView").mouseout(function(){
+                $(this).find(".kiru").css("background-color","white");
+                $(this).find(".corner").css("border-top","40px solid white");
+              });
+
               $('li.dropdown').find('a').on('click', function() {
                   window.location = $(this).attr('href');
               });
