@@ -469,3 +469,6 @@ ol {
   margin-top: 10px;
   border-color: rgb(87, 178, 255)  !important;
 }
+#rss-feeds ul, #rss-feeds-2 ul{
+    list-style-type: disc;
+}

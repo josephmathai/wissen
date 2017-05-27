@@ -225,13 +225,13 @@
                     <div class="col-md-4 col-xs-12 whatsNewContent">
                         <p class="knowMore col-xs-12 whatsNewSub">Blogs </p>
                         <br>
-                        <div class="col-md-12  newStyle">
-                            <p>
-                                <li class="newPoints"><span class="boldText">Appraised at CMMI Level3 maturity</span></li>
-                            </p>
-                            <p>
-                                <li class="newPoints"><span class="boldText">Appraised at CMMI Level3 maturity</span></li>
-                            </p>
+                        <div class="col-md-12  newStyle" id="rss-feeds-2">
+                            <!--<p>-->
+                                <!--<li class="newPoints"><span class="boldText">Appraised at CMMI Level3 maturity</span></li>-->
+                            <!--</p>-->
+                            <!--<p>-->
+                                <!--<li class="newPoints"><span class="boldText">Appraised at CMMI Level3 maturity</span></li>-->
+                            <!--</p>-->
                         </div>
                         <p class="knowMore col-xs-12" style="margin-top:20px"><a href="company/blog.html"><span class="pull-left"> More </span><img src="images/Rightarrow.png" class="pull-left rightArrowAdjust" style="margin-top:4px;margin-left:6px"></a></p>
                     </div>
@@ -658,6 +658,10 @@
                    limit: 3,
                    dateLocale: 'de',
                 })
+                $("#rss-feeds-2").rss("http://www.wissentechnology.com/feed/",
+                    {
+                        entryTemplate:' <li class="newPoints"><a href="{url}"><span class="boldText">{title}</span></a></li>'
+                    })
               })
 
 
