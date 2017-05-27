@@ -138,15 +138,15 @@
                 </div>
             </div>
         </div>
-        <div class="col-xs-12 slider-main">
-            <div class="col-xs-12 projects-slider">
+        <div class="col-xs-12 projects-slider">
+            <div class="col-xs-12 col-md-10 col-md-offset-1">
                 <div class="projects-label">
                     <h2 class="project-head">Projects</h2></div>
                 <div class="col-xs-12 col-sm-12 col-md-12 slider-demo">
 
                     <div class="slider col-xs-12 noPadding">
                         <div class="col-md-4 col-sm-4 col-xs-12 noPadding" style="text-align:center;">
-                            <a href="" style="text-decoration:none;display:inline-block;">
+                            <a href="" style="text-decoration:none;display:inline-block;" class="cardView">
                                 <div class="kiru"><img class="bimg" src="../images/Digital.jpg" style="width: 100%;height:170px;" />
                                 </div>
                                 <div class="corner">
@@ -157,7 +157,7 @@
                             </a>
                         </div>
                         <div class="col-md-4 col-sm-4 col-xs-12 noPadding" style="text-align:center;">
-                            <a href="" style="text-decoration:none;display:inline-block;">
+                            <a href="" style="text-decoration:none;display:inline-block;" class="cardView">
                                 <div class="kiru"><img class="bimg" src="../images/RiskReg.jpg" style="width: 100%;height:170px;" />
                                 </div>
                                 <div class="corner">
@@ -169,7 +169,7 @@
                         </div>
 
                         <div class="col-md-4 col-sm-4 col-xs-12 noPadding" style="text-align:center;">
-                            <a href="" style="text-decoration:none;display:inline-block;">
+                            <a href="" style="text-decoration:none;display:inline-block;" class="cardView">
                                 <div class="kiru"><img class="bimg" src="../images/CapMar.jpg" style="width: 100%;height:170px;" />
                                 </div>
                                 <div class="corner">
@@ -180,7 +180,7 @@
                             </a>
                         </div>
                         <div class="col-md-4 col-sm-4 col-xs-12 noPadding" style="text-align:center;">
-                            <a href="" style="text-decoration:none;display:inline-block;">
+                            <a href="" style="text-decoration:none;display:inline-block;" class="cardView">
                                 <div class="kiru"><img class="bimg" src="../images/Banking.jpg" style="width: 100%;height:170px;" />
                                 </div>
                                 <div class="corner">
@@ -280,6 +280,16 @@
             $(document).ready(function() {
               $('li.dropdown').find('a').on('click', function() {
                   window.location = $(this).attr('href');
+              });
+
+              $(".cardView").mouseover(function(e){
+                 $(this).find(".kiru").css("background-color","#f79131");
+                 $(this).find(".corner").css("border-top","40px solid #f79131");
+              });
+
+              $(".cardView").mouseout(function(){
+                $(this).find(".kiru").css("background-color","white");
+                $(this).find(".corner").css("border-top","40px solid white");
               });
 
                 $('#fullpage').fullpage();
