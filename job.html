@@ -173,6 +173,11 @@
                 {
                   entryTemplate:'<div class="jobTitleJob col-xs-12">{title} <span class="pull-right">{date}</span></div><div class="col-xs-12 jobDescription">{bodyPlain} </div>',
                   dateLocale: 'de',
+                  success: function(){
+                      $(".jobTitleJob").click(function () {
+                          $(this).next('.jobDescription').slideToggle();
+                      })
+                  }
                 })
               })
 
