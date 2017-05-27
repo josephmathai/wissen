@@ -122,18 +122,34 @@ ol {
 .navbar-default .navbar-nav > li > a:hover,.navbar-default .navbar-nav > li > a.active, a.active{
     color: #ff932a !important;
 }
-@media (min-width:1000px) {
+@media (min-width:1060px) and (max-width:1164px) {
+  .navbar-header{
+    width: 34%;
+  }
+  .nav{
+    width: 66%;
+    float: right;
+  }
+}
+
+@media screen and (min-width:1165px)  {
   .navbar-header{
     width: 35%;
   }
+  .nav{
+    width: 60%;
+    float: right;
+  }
+}
+@media (min-width:1000px) {
   .header-logo{
     padding-left: 90px;
   }
   .nav{
-    width: 60%;
-    padding: 8px 36px;
-    float: right;
+    padding: 8px 0px 8px 0px;;
+
   }
+
 }
 .nav > li{
   padding-left: 15px;
