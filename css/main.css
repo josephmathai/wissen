@@ -462,3 +462,7 @@ ol {
   font-family: Raleway-Bold;
   margin-top: 65px;
 }
+
+#rss-feeds ul, #rss-feeds-2 ul{
+    list-style-type: disc;
+}
