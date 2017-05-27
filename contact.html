@@ -337,22 +337,22 @@
                 <form action="#" method="post" novalidate="novalidate" id="mail-form">
                     <p>
                         <label> Your Name (required)<br>
-                        <span class="your-name"><input type="text" name="your-name" value="" size="40" class="" aria-required="true" aria-invalid="false"></span> </label>
+                        <span class="your-name"><input type="text" name="name" value="" size="40" class="" aria-required="true" aria-invalid="false"></span> </label>
                     </p>
                     <p>
                         <label> Your Email (required)<br>
-                        <span class="your-email"><input type="email" name="your-email" value="" size="40" class="" aria-required="true" aria-invalid="false"></span> </label>
+                        <span class="your-email"><input type="email" name="email" value="" size="40" class="" aria-required="true" aria-invalid="false"></span> </label>
                     </p>
                     <p>
                         <label> Subject<br>
-                        <span class="your-subject"><input type="text" name="your-subject" value="" size="40" class="" aria-invalid="false"></span> </label>
+                        <span class="your-subject"><input type="text" name="subject" value="" size="40" class="" aria-invalid="false"></span> </label>
                     </p>
                     <p>
                         <label> Your Message<br>
-                        <span class="your-message"><textarea name="your-message" cols="40" rows="10" class="" aria-invalid="false"></textarea></span> </label>
+                        <span class="your-message"><textarea name="message" cols="40" rows="10" class="" aria-invalid="false"></textarea></span> </label>
                     </p>
                     <p>
-                        <button class="send-mail">Send</button><span class="ajax-loader"></span>
+                        <button class="send-mail">Send</button><span class="ajax-loader"></span><span class="response"></span>
                     </p>
                 </form>
             </div>
@@ -437,6 +437,7 @@
         <script src="js/jquery.film_roll.js"></script>
         <script>
             $("#mail-form").submit(function(e) {
+                $(".response").html('');
                 $(".ajax-loader").css('visibility','visible')
                 var url = "./mail.php";
 
@@ -446,8 +447,8 @@
                     data: $("#mail-form").serialize(),
                     success: function(data)
                     {
-                        alert(data);
-                        $(".ajax-loader").css('visibility','hidden')
+                        $(".ajax-loader").css('visibility','hidden');
+                        $(".response").html(data);
                     }
                 });
 
