@@ -6,18 +6,16 @@ require_once "vendor/autoload.php";
 $mail = new PHPMailer;
 
 //From email address and name
-$mail->From = "from@yourdomain.com";
-$mail->FromName = "Full Name";
+$mail->From = "vvishnuraj58@gmail.com";
+$mail->FromName = "Vishnuraj V";
 
 //To address and name
-$mail->addAddress("vvishnuraj58@gmail.com", "Recepient Name");
+$mail->addAddress("contactus@wissen.com", "Wissen");
 
 //Address to which recipient will reply
-$mail->addReplyTo("reply@yourdomain.com", "Reply");
+$mail->addReplyTo("vvishnuraj58@gmail.com", "Reply");
 
 //CC and BCC
-$mail->addCC("cc@example.com");
-$mail->addBCC("bcc@example.com");
 
 //Send HTML or Plain Text email
 $mail->isHTML(true);
