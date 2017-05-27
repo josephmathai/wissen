@@ -445,3 +445,20 @@ ol {
         display: none;
     }
 }
+.jobDescription {
+  text-align: justify;
+}
+.jobContentSection {
+  margin: 40px 0;
+  line-height: 25px;
+}
+.jobTitleJob {
+  color: #FF932A;
+  text-transform: capitalize;
+  font-size: 19px;
+  margin: 30px 0 10px 0;
+}
+.applyJobText {
+  font-family: Raleway-Bold;
+  margin-top: 65px;
+}

@@ -211,12 +211,12 @@
                     <div class="col-md-4 col-xs-12">
                         <p class="knowMore col-xs-12 whatsNewSub">Careers </p>
                         <br>
-                        <div class="col-xs-12  newStyle">
-                            <li class="newPoints"><span class="boldText">Argus Support Engineer</span></li>
+                        <div class="col-xs-12  newStyle" id="rss-feeds">
+                            <!-- <li class="newPoints"><span class="boldText">Argus Support Engineer</span></li>
                             <li class="newPoints"><span class="boldText">Managment Trainee</span></li>
                             <li class="newPoints"><span class="boldText">HR Executive</span></li>
                             <li class="newPoints"><span class="boldText">Argus Support Engineer</span></li>
-                            <li class="newPoints"><span class="boldText">HR Executive</span></li>
+                            <li class="newPoints"><span class="boldText">HR Executive</span></li> -->
                         </div>
                         <p class="knowMore col-xs-12" style="margin-top:20px"> <a href="career/career.html"><span class="pull-left"> More</span><img src="images/Rightarrow.png" class="pull-left rightArrowAdjust" style="margin-top:4px;margin-left:6px"></a></p>
                     </div>
@@ -553,7 +553,9 @@
         </div>
       </div>
 </div>
-<div id="rss-feeds"></div>
+<!-- <div id="rss-feeds"> -->
+  <!-- <span>{title}</span> -->
+</div>
             <div class="col-xs-12 noPadding main_footer">
                 <div class="col-md-12 foot">
                     <div class="footer_content">Home
@@ -718,7 +720,7 @@
               jQuery(function($) {
                 $("#rss-feeds").rss("https://wissentech.wordpress.com/category/careers/feed/",
                 {
-                  // alert("hii");
+                  entryTemplate:' <li class="newPoints"><a href="{url}"><span class="boldText">{title}</span></a></li>'
                 })
               })
 
