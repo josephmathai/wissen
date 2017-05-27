@@ -42,7 +42,7 @@ if($resp ==''){
     }
     else
     {
-        $resp = "Message has been sent successfully";
+        $resp = "Message has been sent successfully.";
     }
 }
 echo $resp;

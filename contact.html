@@ -448,6 +448,9 @@
                     success: function(data)
                     {
                         $(".ajax-loader").css('visibility','hidden');
+                        if(data=="Message has been sent successfully."){
+                            $("input[type=text], textarea").val("");
+                        }
                         $(".response").html(data);
                     }
                 });
