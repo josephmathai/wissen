@@ -294,7 +294,12 @@
               jQuery(function($) {
                 $("#rss-feeds").rss("https://wissentech.wordpress.com/category/careers/feed/",
                 {
-                  entryTemplate:'<div class="jobTitleJob col-xs-12">{title} {{date}}</div><div class="col-xs-12 jobDescription">{bodyPlain} </div>'
+                  entryTemplate:'<div class="jobTitleJob col-xs-12">{title} {{date}}</div> </div><div class="col-xs-12 jobDescription">{bodyPlain} </div>',
+                  success: function(){
+                      $(".jobTitleJob").click(function () {
+                          $(this).next('.jobDescription').slideToggle();
+                      })
+                  }
                 })
               })
 

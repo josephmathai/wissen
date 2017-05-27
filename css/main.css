@@ -466,3 +466,15 @@ ol {
 #rss-feeds ul, #rss-feeds-2 ul{
     list-style-type: disc;
 }
+
+.jobTitleJob {
+    cursor: pointer;
+}
+
+.jobTitleJob:hover {
+    text-decoration: underline;
+}
+
+.jobDescription {
+    display: none;
+}
