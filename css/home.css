@@ -568,3 +568,7 @@ a {
 a.no-hover {
     color: #fff !important;
 }
+
+.image_margin_adjust{
+  margin-top: 72px !important;
+}

@@ -15,6 +15,7 @@
 }
 .industry-sublabel > h2 {
   font-size: 40px;
+  text-align: left;
 }
 .cm-div{
   padding:5% 2% 2% 2%;
@@ -73,7 +74,8 @@
     width:93% !important;
   }
   .industry-sublabel > h2{
-    font-size: 24px;
+    font-size: 30px;
+    text-align: left;
   }
 }
 @media (min-width:420px)and (max-width:550px) {
@@ -82,7 +84,6 @@
   }
   .projects-label{
     width: 93%;
-    top: -37px;
 
   }
   .slider{
@@ -92,7 +93,8 @@
     /*width:93%;*/
   }
   .industry-sublabel > h2{
-    font-size: 19px;
+    font-size: 30px;
+    text-align: left;
   }
 }
 @media (min-width:320px)and (max-width:419px) {
@@ -103,7 +105,8 @@
     /*width: 92%;*/
   }
   .industry-sublabel > h2{
-    font-size: 18px;
+    font-size: 25px;
+    text-align: left;
   }
   .industry-sublabel{
     padding: 1% 5%;
