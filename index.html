@@ -627,6 +627,7 @@
         <script defer src="js/jquery.flexslider.js"></script>
         <script src="js/slick.min.js"></script>
         <script src="js/jquery.film_roll.js"></script>
+          <script src="js/jquery.rss.js"></script>
         <script>
             (function() {
                 jQuery(function() {
@@ -653,7 +654,7 @@
               jQuery(function($) {
                 $("#rss-feeds").rss("https://wissentech.wordpress.com/category/careers/feed/",
                 {
-                  entryTemplate:' <li class="newPoints"><a href="{url}"><span class="boldText">{title}</span></a></li>'
+                  entryTemplate:' <li class="newPoints"><a href="/job.html"><span class="boldText">{title}</span></a></li>'
                 })
               })
 
