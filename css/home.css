@@ -572,3 +572,7 @@ a.no-hover {
 .image_margin_adjust{
   margin-top: 72px !important;
 }
+
+.wissenengagehover:hover{
+  color: #ff932a !important;
+}
