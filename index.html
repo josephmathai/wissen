@@ -553,6 +553,7 @@
         </div>
       </div>
 </div>
+<div id="rss-feeds"></div>
             <div class="col-xs-12 noPadding main_footer">
                 <div class="col-md-12 foot">
                     <div class="footer_content">Home
@@ -690,6 +691,7 @@
         <script defer src="js/jquery.flexslider.js"></script>
         <script src="js/slick.min.js"></script>
         <script src="js/jquery.film_roll.js"></script>
+        <script src="js/jquery.rss.js"></script>
         <script>
             (function() {
                 jQuery(function() {
@@ -713,6 +715,13 @@
 
             }).call(this);
             $(document).ready(function() {
+              jQuery(function($) {
+                $("#rss-feeds").rss("https://wissentech.wordpress.com/category/careers/feed/",
+                {
+                  entryTemplate:'<li>{title}</li>'
+                  // alert("hii");
+                })
+              })
 
               $(".cardView").mouseover(function(e){
                  $(this).find(".kiru").css("background-color","#f79131");
