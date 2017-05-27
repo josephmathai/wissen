@@ -214,25 +214,25 @@
                     <div class="col-md-4 col-xs-12">
                         <p class="knowMore col-xs-12 whatsNewSub">Careers </p>
                         <br>
-                        <div class="col-xs-12  newStyle">
-                            <li class="newPoints"><span class="boldText">Argus Support Engineer</span></li>
+                        <div class="col-xs-12  newStyle" id="rss-feeds">
+                            <!-- <li class="newPoints"><span class="boldText">Argus Support Engineer</span></li>
                             <li class="newPoints"><span class="boldText">Managment Trainee</span></li>
                             <li class="newPoints"><span class="boldText">HR Executive</span></li>
                             <li class="newPoints"><span class="boldText">Argus Support Engineer</span></li>
-                            <li class="newPoints"><span class="boldText">HR Executive</span></li>
+                            <li class="newPoints"><span class="boldText">HR Executive</span></li> -->
                         </div>
-                        <p class="knowMore col-xs-12" style="margin-top:20px"> <a href="career/career.html"><span class="pull-left"> More</span><img src="images/Rightarrow.png" class="pull-left rightArrowAdjust" style="margin-top:4px;margin-left:6px"></a></p>
+                        <p class="knowMore col-xs-12" style="margin-top:20px"> <a href="job.html"><span class="pull-left"> More</span><img src="images/Rightarrow.png" class="pull-left rightArrowAdjust" style="margin-top:4px;margin-left:6px"></a></p>
                     </div>
                     <div class="col-md-4 col-xs-12 whatsNewContent">
                         <p class="knowMore col-xs-12 whatsNewSub">Blogs </p>
                         <br>
-                        <div class="col-md-12  newStyle">
-                            <p>
-                                <li class="newPoints"><span class="boldText">Appraised at CMMI Level3 maturity</span></li>
-                            </p>
-                            <p>
-                                <li class="newPoints"><span class="boldText">Appraised at CMMI Level3 maturity</span></li>
-                            </p>
+                        <div class="col-md-12  newStyle" id="rss-feeds-2">
+                            <!--<p>-->
+                                <!--<li class="newPoints"><span class="boldText">Appraised at CMMI Level3 maturity</span></li>-->
+                            <!--</p>-->
+                            <!--<p>-->
+                                <!--<li class="newPoints"><span class="boldText">Appraised at CMMI Level3 maturity</span></li>-->
+                            <!--</p>-->
                         </div>
                         <p class="knowMore col-xs-12" style="margin-top:20px"><a href="company/blog.html"><span class="pull-left"> More </span><img src="images/Rightarrow.png" class="pull-left rightArrowAdjust" style="margin-top:4px;margin-left:6px"></a></p>
                     </div>
@@ -556,6 +556,7 @@
         </div>
       </div>
 </div>
+
 <div w3-include-html="company/footer.html"></div>
 
             <!-- <div class="col-xs-12 noPadding" style="z-index: -1">
@@ -627,6 +628,7 @@
         <script defer src="js/jquery.flexslider.js"></script>
         <script src="js/slick.min.js"></script>
         <script src="js/jquery.film_roll.js"></script>
+        <script src="js/jquery.rss.js"></script>
         <script>
             (function() {
                 jQuery(function() {
@@ -650,6 +652,19 @@
 
             }).call(this);
             $(document).ready(function() {
+              jQuery(function($) {
+                $("#rss-feeds").rss("https://wissentech.wordpress.com/category/careers/feed/",
+                {
+                  entryTemplate:' <li class="newPoints"><a href="job.html"><span class="boldText">{title}</span></a></li>',
+                   limit: 3,
+                   dateLocale: 'de',
+                })
+                $("#rss-feeds-2").rss("http://www.wissentechnology.com/feed/",
+                    {
+                        entryTemplate:' <li class="newPoints"><a href="{url}"><span class="boldText">{title}</span></a></li>'
+                    })
+              })
+
 
               $(".cardView").mouseover(function(e){
                  $(this).find(".kiru").css("background-color","#f79131");

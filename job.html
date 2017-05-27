@@ -1,0 +1,323 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/videoslide.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/site.css" />
+    <link rel="stylesheet" href="css/jquery.fullpage.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/industries.css" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+    <script src="js/modernizr.js"></script>
+    <script src="js/w3.js"></script>
+    <title class=""></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+</head>
+
+<body class="bodyStyle">
+    <div class="col-md-12 noPadding wow fadeInDown">
+        <div class="line-div">
+            <div class="top-line"></div>
+        </div>
+        <div class="navbar navbar-custom navbar-default navbar-static-top" style="position:fixed;width:100%;">
+            <div class="navbar-header">
+                <a class="header-logo" href="./">
+                    <img src="images/Logo.png" class="mainLogoAdj">
+                </a>
+                <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" href="#">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                      <a class="dropdown-toggle active" data-toggle="dropdown" href="#">Home</span></a>
+
+                        <ul class="dropdown-menu">
+                            <div class="triangle"></div>
+                            <li><a onClick="animateclick()" href="#whoarewe" class="hoverLinks">Who we are</a></li>
+                            <li><a href="#whatsnew" class="hoverLinks">What's new</a></li>
+                            <li><a href="#industries" class="hoverLinks">Industries</a></li>
+                            <li><a href="#technolgypractice" class="hoverLinks">Technology Practice</a></li>
+                            <li style="border-bottom:none;" class="hoverLinks"><a href="#testimonial" class="hoverLinks">Testimonials</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle navLinkToggle " data-toggle="dropdown" href="Industries/bankingfinanciaL3.html">Industries</span></a>
+                        <a class="dropdown-toggle navSmallScreen" data-toggle="dropdown" href="#">Industries</a>
+                        <ul class="dropdown-menu">
+                            <div class="triangle"></div>
+                            <li><a href="Industries/banking-financial.html">Banking & Financial</a></li>
+                            <li><a href="Industries/telecom.html">Telecom</a></li>
+                            <li style="border-bottom:none;"><a href="Industries/healthcare.html">Healthcare</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle navLinkToggle" data-toggle="dropdown" href="technologies/digital-experience.html">Technology</a>
+                        <a class="dropdown-toggle navSmallScreen" data-toggle="dropdown" href="#">Technology</a>
+                        <ul class="dropdown-menu">
+                            <div class="triangle"></div>
+                            <li><a href="technologies/digital-experience.html">Digital Experience</a></li>
+                            <li><a href="technologies/datascience.html">Data Science</a></li>
+                            <li><a href="technologies/tech_practice.html">Technology</a></li>
+                            <li style="border-bottom:none;"><a href="technologies/distributed-development.html">Distributed Development</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle navLinkToggle" data-toggle="dropdown" href="company/about.html">Company</a>
+                        <a class="dropdown-toggle navSmallScreen" data-toggle="dropdown" href="#">Company</a>
+                        <ul class="dropdown-menu">
+                            <div class="triangle"></div>
+                            <li><a href="company/about.html" class="hoverLinks">About</a></li>
+                            <li><a href="company/leadership.html" class="hoverLinks">Leadership</a></li>
+                            <li><a href="company/patners.html" class="hoverLinks">Parnters</a></li>
+                            <li style="border-bottom:none;"><a href="company/blog.html" class="hoverLinks">Blog</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle navLinkToggle" data-toggle="dropdown" href="career/career.html">Career</a>
+                        <a class="dropdown-toggle navSmallScreen" data-toggle="dropdown" href="#">Career</a>
+                        <ul class="dropdown-menu">
+                            <div class="triangle"></div>
+                            <li><a href="career/jobsearch.html">Current Opportunities</a></li>
+                            <li style="border:none"><a href="career/workingwissen.html">Working For Wissen</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-xs-12 main-div noPadding">
+            <div class="col-xs-12 noPadding">
+                <img src="images/jobsearch.jpg" class="industry-banner desk-div">
+                <img src="images/mobilejobsearch.jpg" class="industry-banner mobile-div">
+                <div class="industry-sublabel careerjob">
+                    <h2 class="health-heading"><span class="industry-sublabel-span" style="color: #ffffff;">Job Search</span></h2></div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 jobContentSection">
+          <div class="col-md-10 col-md-offset-1">
+            <div class="col-md-9" id="rss-feeds"></div>
+            <div class="col-md-3 noPadding">
+              <div class="col-xs-12 noPadding applyJobText">
+                Apply on this job
+              </div>
+              <div class="col-xs-12 noPadding">
+                <i class="fa fa-trophy" aria-hidden="true" style="margin-right:5px;"></i> How to Apply ?
+              </div>
+              <div class="col-xs-12 noPadding">
+                 Email your resume to recruitment@wissen.com and one of our specialist consultant will contact you promptly.
+              </div>
+              <div class="col-xs-12 noPadding">
+                Apply via Email
+              </div>
+              <div class="col-xs-12 noPadding">
+                <a href="mailto:contactus@wissen.com"><button class="btn btn-default senEmailBtn"> Send Email</button></a>
+              </div>
+              <div>
+            </div>
+          </div>
+        </div>
+
+        </div>
+
+<div w3-include-html="company/footer.html"></div>
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/wow.js"></script>
+        <script src="js/jquery.fullpage.js"></script>
+        <script defer src="js/jquery.flexslider.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/jquery.film_roll.js"></script>
+        <script src="js/jquery.rss.js"></script>
+        <script src="js/moment.js"></script>
+        <script>
+            (function() {
+                jQuery(function() {
+                    this.film_rolls || (this.film_rolls = []);
+                    this.film_rolls['film_roll_2'] = new FilmRoll({
+                        container: '#film_roll_2',
+                        height: 190,
+                        prev: '#film_roll_2_left',
+                        next: '#film_roll_2_right',
+                        pager: false
+                    });
+                    this.film_rolls['film_roll_1'] = new FilmRoll({
+                        container: '#film_roll_1',
+                        height: 190,
+                        prev: '#film_roll_1_left',
+                        next: '#film_roll_1_right',
+                        pager: false
+                    });
+                    return true;
+                });
+
+            }).call(this);
+            $(document).ready(function() {
+              jQuery(function($) {
+                $("#rss-feeds").rss("https://wissentech.wordpress.com/category/careers/feed/",
+                {
+                  entryTemplate:'<div class="jobTitleJob col-xs-12">{title} <span class="pull-right">{date}</span></div><div class="col-xs-12 jobDescription">{bodyPlain} </div>',
+                  dateLocale: 'de',
+                })
+              })
+
+              $(".cardView").mouseover(function(e){
+                 $(this).find(".kiru").css("background-color","#f79131");
+                 $(this).find(".corner").css("border-top","40px solid #f79131");
+              });
+
+              $(".cardView").mouseout(function(){
+                $(this).find(".kiru").css("background-color","white");
+                $(this).find(".corner").css("border-top","40px solid white");
+              });
+
+              $('li.dropdown').find('a').on('click', function() {
+                  window.location = $(this).attr('href');
+              });
+                $('a').click(function() {
+                    $('html, body').animate({
+                        scrollTop: $($(this).attr('href')).offset().top
+                    }, 500);
+                    return false;
+                });
+
+                $('#fullpage').fullpage();
+                $(".dropdown-menu li a.hoverLinks").click(function() {
+                    $(".dropdown-menu li a.hoverLinks").attr('style', 'color:#fff !important');
+                    $(this).attr('style', 'color:#ff932a !important');
+                })
+                var wow = new WOW({
+                    animateClass: 'animated',
+                    offset: 100,
+                    callback: function(box) {
+                        console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+                    }
+                });
+                var w = $(".foot").innerHeight();
+                var width = $(window).width();
+                if (width > 999) {
+                    $(".footer_contact").css("height", w + "px");
+                }
+                wow.init();
+                $('.slider').slick({
+                    prevArrow: '<div class="slick-prev"></div>',
+                    nextArrow: '<div class="slick-next"></div>',
+                    responsive: [{
+                            breakpoint: 1500,
+                            settings: {
+                                slidesToShow: 2,
+                                slidesToScroll: 1,
+                                infinite: true,
+                                dots: true
+                            }
+                        },
+                        {
+                            breakpoint: 1024,
+                            settings: {
+                                slidesToShow: 2,
+                                slidesToScroll: 1,
+                                infinite: true,
+                                dots: true
+                            }
+                        },
+                        {
+                            breakpoint: 600,
+                            settings: {
+                                slidesToShow: 2,
+                                slidesToScroll: 2
+                            }
+                        },
+                        {
+                            breakpoint: 480,
+                            settings: {
+                                slidesToShow: 1,
+                                slidesToScroll: 1
+                            }
+                        }
+                    ]
+                });
+                $('.selector').slick({
+                    nextArrow: '<i class="fa fa-arrow-right"><img src="images/Leftarrow.png"></i>',
+                    prevArrow: '<i class="fa fa-arrow-left"><img src="images/Leftarrow.png"></i>',
+                    // add the rest of your options here
+                });
+                $(".themeDarkBlue").mouseover(function() {
+                    if ($(".navbar-collapse.collapse").hasClass('in')) {
+                        $(".navbar-collapse.collapse").removeClass('in');
+                    }
+                });
+            });
+            $(window).load(function() {
+                $('.flexslider').flexslider({
+                    animation: "slide",
+                    start: function(slider) {
+                        $('body').removeClass('loading');
+                    }
+                });
+                $('.flexslider-2').flexslider({
+                    animation: "slide",
+                    itemWidth: 700,
+                    itemMargin: 5,
+                    minItems: 1,
+                    maxItems: 2,
+                    start: function(slider) {
+                        $('body').removeClass('loading');
+                    }
+                });
+            });
+
+        </script>
+        <script>
+          w3.includeHTML();
+        </script>
+        <style>
+            @media screen and (max-width: 860px) {
+                .flex-direction-nav .flex-prev {
+                    opacity: 1;
+                    left: 0px !important;
+                }
+                .flex-direction-nav .flex-next {
+                    opacity: 1;
+                    right: 0px !important;
+                }
+                .themeMargin {
+                    margin-top: 0px !important;
+                }
+                .backgroundImage {
+                    margin-top: 0px !important
+                }
+                .slick-prev {
+                    left: -15px !important;
+                }
+            }
+
+            .slideImages {
+                background: #001328 !important;
+            }
+
+            .knowMore>a {
+                color: #f79131;
+            }
+
+            .knowMore>a:hover {
+                color: white;
+            }
+        </style>
+</body>
+
+</html>
