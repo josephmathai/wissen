@@ -6,7 +6,7 @@
   min-height:80px;
   /*max-width: 700px;*/
   float:left;
-  padding:1% 13% 2% 2%;
+  padding:3% 2%;
   border-left:20px solid #034A77;
   position:absolute;
   z-index:100;
@@ -45,10 +45,11 @@
   color: white;
   float: left;
   text-align: left;
-  padding-top: 6px !important;
-  padding-bottom: 10px !important;
-  padding-right: 15%;
-  padding-left: 20px !important;
+  /*padding-top: 6px !important;
+  padding-bottom: 10px !important;*/
+  padding:6px 30px 10px 30px;
+  /*padding-right: 15%;
+  padding-left: 20px !important;*/
   font-family: Raleway-Regular;
   top: 5px;
   position: absolute;
@@ -66,7 +67,7 @@
     left:0%;
   }
   .industry-sublabel{
-    width:95%;
+    /*width:95%;*/
   }
   .careerjob{
     width:93% !important;
@@ -88,7 +89,7 @@
     left:0%;
   }
   .industry-sublabel{
-    width:93%;
+    /*width:93%;*/
   }
   .industry-sublabel > h2{
     font-size: 19px;
@@ -99,13 +100,14 @@
     margin-top: 50px;
   }
   .projects-label{
-    width: 92%;
+    /*width: 92%;*/
   }
   .industry-sublabel > h2{
     font-size: 18px;
   }
   .industry-sublabel{
-    width:90% !important;
+    padding: 1% 5%;
+    /*width:90% !important;*/
   }
 .nb::after {
   content: '';
@@ -157,13 +159,13 @@
 }
 @media screen and (min-width:768px) {
   .industry-sublabel{
-    padding: 1% 10% 1% 2%;
+    padding: 1% 3%;
     left: 5%;
   }
-  .projects-slider{
+  /*.projects-slider{
     padding-left: 5%;
     padding-right: 5%;
-  }
+  }*/
   .industry-sublabel-span{
     display: block;
     /*width: 140%;*/
