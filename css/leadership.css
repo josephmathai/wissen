@@ -94,6 +94,14 @@
 }
 .contentsCenter {
   text-align: -webkit-center !important;
+  text-align: center !important;
+
+}
+.contentsCenter img {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+
 }
 .knowMoreLink {
   color:#f79131 !important;
