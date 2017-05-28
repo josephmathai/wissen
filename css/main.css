@@ -57,6 +57,7 @@ ol {
   }
   .dropdown-menu {
     margin-right: 15px
+    margin-left: 15px;
   }
   .header-logo{
     height: 60px !important;
@@ -76,6 +77,9 @@ ol {
   .wssNav{
     padding-left: 0;
     padding-right: 0;
+  }
+  .navbar-nav>li {
+    padding: 0 !important;
   }
 }
 @media (min-width:768) and (max-width: 992px) {
@@ -146,13 +150,13 @@ ol {
     padding-left: 90px;
   }
   .nav{
-    padding: 8px 0px 8px 0px;;
+    padding: 0;;
 
   }
 
 }
 .nav > li{
-  padding-left: 15px;
+  padding: 8px 0;
 }
 @media (max-width: 999px) {
   .navbar-toggle{
@@ -195,6 +199,7 @@ ol {
 }
 
 .dropdown-menu .triangle {
+    display: none;
     width: 0;
     height: 0;
     position: absolute;
@@ -206,16 +211,18 @@ ol {
     margin-left: -8px;
 }
 .dropdown-menu{
-    background:#001328 !important;
-    padding-left: 10px;
-    padding-right: 10px;
+    top: 100% !important;
+    background:#F2F2F2 !important;
+    /*padding-left: 10px;
+    padding-right: 10px;*/
     min-width: 167px !important;
-    border:1px solid #034A77;
+    /*border:1px solid #034A77;*/
     border-top:none;
+    -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.03);
 
 }
 .dropdown-menu > li > a{
-  color:#fff;
+  color:#000 !important;
   font-size: 14px;
   padding-left:10px;
   padding-right:10px;
@@ -227,12 +234,14 @@ ol {
 }
 .dropdown-menu > li > a:hover,.dropdown-menu > li > a:focus{
   background:transparent;
-  color:#ff932a !important;
+  /*color:#ff932a !important;*/
 }
 .dropdown-menu > li {
- padding-top:5px;
- padding-bottom:5px;
- border-bottom: 1px solid #034A77;
+ padding: 5px 10px;
+ border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+.dropdown-menu > li:hover {
+  background: rgba(0,0,0,.06);
 }
 
 @media screen and (max-width:1000px) {
