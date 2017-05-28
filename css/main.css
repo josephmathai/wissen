@@ -424,12 +424,22 @@ ol {
     display: none;
 }
 
+#address-location .mobile-hyd {
+    width: 100%;
+    padding-top: 10px;
+}
+
 .image-contact {
     margin-top: 68px;
 }
 
 .mobile-location {
     display: none;
+    width: 100%;
+}
+
+.location-second {
+    padding-top: 10px;
 }
 
 @media screen and (max-width: 745px){
