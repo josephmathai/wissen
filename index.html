@@ -653,6 +653,9 @@
 
             }).call(this);
             $(document).ready(function() {
+              $(".hoverLinks").click(function () {
+                  $(".navbar-collapse").removeClass('in');
+              })
               jQuery(function($) {
                 $("#rss-feeds").rss("https://wissentech.wordpress.com/category/careers/feed/",
                 {
