@@ -106,52 +106,17 @@
             </div>
         </div>
         <div class="col-xs-12 " style="min-height:500px;height:auto;padding-left:5%; padding-right:5%;">
-          <div class="col-xs-12 noPadding" style="border-bottom:1px solid #B6B6B6;padding-bottom: 15px;">
-                    <div class="col-xs-12 whoWeAre noPadding">There are many variations of  Lorem Ipsum available</div>
-                    <div class="col-xs-12">
-                        <p class="commonAlign">
-                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
-                        </p>
-                    </div>
-                    <div class="col-xs-12 text-center knowMoreLink">
-                    <span style="cursor:pointer"><span style="margin-right:10px">Read More</span> <img src="../images/Rightarrow.png" style="width:20px;position:absolute;top:4px"></span>
+          <div class="col-xs-12 noPadding" id="rss-feeds">
+                    <!--<div class="col-xs-12 whoWeAre noPadding">There are many variations of  Lorem Ipsum available</div>-->
+                    <!--<div class="col-xs-12">-->
+                        <!--<p class="commonAlign">-->
+                            <!--There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.-->
+                        <!--</p>-->
+                    <!--</div>-->
+                    <!--<div class="col-xs-12 text-center knowMoreLink">-->
+                    <!--<span style="cursor:pointer"><span style="margin-right:10px">Read More</span> <img src="../images/Rightarrow.png" style="width:20px;position:absolute;top:4px"></span>-->
+                <!--</div>-->
                 </div>
-                </div>
-                <div class="col-xs-12 noPadding" style="padding-bottom:15px;border-bottom:1px solid #B6B6B6;">
-                <div class="col-xs-12 col-md-6 col-sm-6">
-                  <div class="col-xs-12 whoWeAre noPadding">There are many  Lorem Ipsum available</div>
-                  <div class="col-xs-12">
-                      <p class="commonAlign">
-                          There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
-                      </p>
-                  </div>
-                  <div class="col-xs-12 text-center knowMoreLink">
-                  <span style="cursor:pointer"><span style="margin-right:10px">Read More</span> <img src="../images/Rightarrow.png" style="width:20px;position:absolute;top:4px"></span>
-              </div>
-                </div>
-                <div class="col-xs-12 col-md-6 col-sm-6">
-                  <div class="col-xs-12 whoWeAre noPadding">There are many  Lorem Ipsum available</div>
-                  <div class="col-xs-12">
-                      <p class="commonAlign">
-                          There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
-                      </p>
-                  </div>
-                  <div class="col-xs-12 text-center knowMoreLink">
-                  <span style="cursor:pointer"><span style="margin-right:10px">Read More</span> <img src="../images/Rightarrow.png" style="width:20px;position:absolute;top:4px"></span>
-              </div>
-                </div>
-              </div>
-              <div class="col-xs-12 noPadding" style="padding-bottom: 20px;">
-                        <div class="col-xs-12 whoWeAre noPadding">There are many variations of  Lorem Ipsum available</div>
-                        <div class="col-xs-12">
-                            <p class="commonAlign">
-                                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
-                            </p>
-                        </div>
-                        <div class="col-xs-12 text-center knowMoreLink">
-                        <span style="cursor:pointer"><span style="margin-right:10px">Read More</span> <img src="../images/Rightarrow.png" style="width:20px;position:absolute;top:4px"></span>
-                    </div>
-                    </div>
 
         </div>
 
@@ -170,9 +135,29 @@
     <script src="../js/w3.js"></script>
     <script src="../js/slick.min.js"></script>
     <script src="../js/jquery.fullpage.js"></script>
+    <script src="../js/jquery.rss.js"></script>
     <script>
       w3.includeHTML();
         $(document).ready(function() {
+            jQuery(function($) {
+                $("#rss-feeds").rss("http://www.wissentechnology.com/feed/",
+                    {
+                        entryTemplate:'<div class="col-xs-12 whoWeAre noPadding blog-title">{title}</div><div class="col-xs-12"> <p class="commonAlign" style="display: none;">{bodyPlain}</p> </div> <div class="col-xs-12 text-center knowMoreLink" style="margin-right:10px;cursor:pointer">Read More...</span></div>',
+                        dateLocale: 'de',
+                        success: function(){
+                            $(".knowMoreLink").click(function () {
+                                console.log($(this).text());
+                                if($(this).text() == "Read More..."){
+                                    $(this).text("Show Less");
+                                }
+                                else {
+                                    $(this).text("Read More...");
+                                };
+                                $(this).prev('div').find('.commonAlign').slideToggle()
+                            })
+                        }
+                    })
+            })
           $('li.dropdown').find('a').on('click', function() {
               window.location = $(this).attr('href');
           });
