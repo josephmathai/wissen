@@ -665,7 +665,8 @@
                 })
                 $("#rss-feeds-2").rss("http://www.wissentechnology.com/feed/",
                     {
-                        entryTemplate:' <li class="newPoints"><a href="{url}"><span class="boldText">{title}</span></a></li>'
+                        entryTemplate:' <li class="newPoints"><a href="{url}"><span class="boldText">{title}</span></a></li>',
+                        limit: 3,
                     })
               })
 
