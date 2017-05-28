@@ -17,6 +17,26 @@
     <link rel="stylesheet" href="../css/industries.css" />
     <link rel="stylesheet" href="../css/font-awesome.css" />
     <link rel="stylesheet" href="../css/flexslider.css" type="text/css" media="screen" />
+    <style>
+        .industry-sublabel {
+            bottom: 0px;
+        }
+
+        @media (max-width: 470px){
+            .industry-sublabel {
+                padding-top: 26px;
+            }
+        }
+        @media (max-width: 640px){
+            .date-right {
+                float: left !important;
+                font-size: 13px;
+            }
+        }
+        .date-right {
+            width: 316px;
+        }
+    </style>
     <script src="../js/modernizr.js"></script>
     <script src="../js/w3.js"></script>
     <title class=""></title>
@@ -110,10 +130,10 @@
         </div>
     </div>
 
-    <div class="col-xs-12 jobContentSection">
-        <div class="col-md-10 col-md-offset-1">
+    <div class="col-xs-12 jobContentSection noPadding">
+        <div class="col-md-10 col-md-offset-1 noPadding">
             <div class="col-md-9" id="rss-feeds"></div>
-            <div class="col-md-3 noPadding">
+            <div class="col-md-3">
                 <div class="col-xs-12 noPadding applyJobText">
                     Apply on this job
                 </div>
@@ -172,7 +192,7 @@
             jQuery(function($) {
                 $("#rss-feeds").rss("https://wissentech.wordpress.com/category/careers/feed/",
                     {
-                        entryTemplate:'<div class="jobTitleJob col-xs-12">{title} <span class="pull-right">{date}</span></div><div class="col-xs-12 jobDescription">{bodyPlain} </div>',
+                        entryTemplate:'<div class="jobTitleJob col-xs-12"><span class="pull-left">{title}</span> <span class="pull-right date-right">{date}</span><div class="col-xs-12 jobSearchKnowMore" >Know More</div></div><div class="col-xs-12 jobDescription">{bodyPlain} </div>',
                         dateLocale: 'de',
                         success: function(){
                             $(".jobTitleJob").click(function () {
