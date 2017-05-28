@@ -433,10 +433,10 @@ a {
 .knowMoreSlider {
   font-family: Raleway-Bold;
 }
-.hoverLinks:hover{
+/*.hoverLinks:hover{
   color: rgba(247, 145, 49, 0.65) !important;
   font-weight: 600;
-}
+}*/
  @media screen and (max-width:767px) {
    .show-div{
      display: none !important;
