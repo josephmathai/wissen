@@ -79,6 +79,9 @@
 }
 
 @media screen and (max-width: 767px) {
+  .jobSearchKnowMore {
+    display: block !important;
+  }
   .iconsEt {
     width: 100%;
   }
@@ -575,4 +578,9 @@ a.no-hover {
 
 .wissenengagehover:hover{
   color: #ff932a !important;
+}
+.jobSearchKnowMore {
+  display: none;
+  padding: 0 !important;
+  font-size: 13px !important;
 }
