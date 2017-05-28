@@ -62,6 +62,12 @@
 }
 .carreer_BoxText {
   color: white ;
+  text-align: justify;
+}
+@media screen and (max-width:767px) {
+.carrer_BoxBg{
+padding: 33px 24px !important;
+}
 }
 .carrer_BoxBg{
   background-image:url('../images/Box-1.jpg');
