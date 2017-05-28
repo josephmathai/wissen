@@ -9,8 +9,8 @@
     this.effectQueue  = [];
 
     this.options = $.extend({
-      ssl: false,
-      host: 'https://www.feedrapp.info',
+      ssl: true,
+      host: 'www.feedrapp.info',
       limit: null,
       key: null,
       layoutTemplate: '<ul>{entries}</ul>',
