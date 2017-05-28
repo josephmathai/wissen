@@ -19,6 +19,11 @@
     <title class=""></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <style>
+      ul, menu, dir {
+        -webkit-padding-start: 0 !important;
+      }
+    </style>
 </head>
 
 <body class="bodyStyle">
@@ -40,8 +45,8 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li class="dropdown">
-                      <a class="dropdown-toggle navLinkToggle" data-toggle="dropdown" href="../index.html">Home</a>
-                      <a class="dropdown-toggle navSmallScreen" data-toggle="dropdown" href="#">Home</a>
+                        <a class="dropdown-toggle navLinkToggle" data-toggle="dropdown" href="../index.html">Home</a>
+                        <a class="dropdown-toggle navSmallScreen" data-toggle="dropdown" href="#">Home</a>
                         <ul class="dropdown-menu">
                             <div class="triangle"></div>
                             <li><a href="../index.html">Who we are</a></li>
@@ -66,7 +71,7 @@
                         <a class="dropdown-toggle navSmallScreen" data-toggle="dropdown" href="#">Services & Technologies</a>
                         <ul class="dropdown-menu">
                             <div class="triangle"></div>
-                            <li ><a href="../technologies/distributed-development.html">Distributed Application <br> Development</a></li>
+                            <li><a href="../technologies/distributed-development.html">Distributed Application <br> Development</a></li>
                             <li><a href="../technologies/datascience.html">NLU & Analytics</a></li>
                             <li style="border-bottom:none;"><a href="../technologies/digital-experience.html">Digital Experience</a></li>
                         </ul>
@@ -97,35 +102,19 @@
             </div>
         </div>
 
-        <div class="col-xs-12 main-div noPadding">
+        <div class="col-xs-12 main-div noPadding" style="padding-bottom:40px">
             <div class="col-xs-12 noPadding">
                 <img src="../images/jobsearch.jpg" class="industry-banner desk-div">
                 <img src="../images/mobilejobsearch.jpg" class="industry-banner mobile-div">
                 <div class="industry-sublabel careerjob">
                     <h2 class="health-heading"><span class="industry-sublabel-span" style="color: #ffffff;">Blog</span></h2></div>
             </div>
-        </div>
-        <div class="col-xs-12 " style="min-height:500px;height:auto;padding-left:5%; padding-right:5%;">
-          <div class="col-xs-12 noPadding" id="rss-feeds">
-                    <!--<div class="col-xs-12 whoWeAre noPadding">There are many variations of  Lorem Ipsum available</div>-->
-                    <!--<div class="col-xs-12">-->
-                        <!--<p class="commonAlign">-->
-                            <!--There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.-->
-                        <!--</p>-->
-                    <!--</div>-->
-                    <!--<div class="col-xs-12 text-center knowMoreLink">-->
-                    <!--<span style="cursor:pointer"><span style="margin-right:10px">Read More</span> <img src="../images/Rightarrow.png" style="width:20px;position:absolute;top:4px"></span>-->
-                <!--</div>-->
+            <div class="col-xs-12 ">
+                <div class="col-xs-12 col-md-10 col-md-offset-1 noPadding" id="rss-feeds">
                 </div>
-
+            </div>
         </div>
-
-
-
-
         <div w3-include-html="../company/footer.html"></div>
-
-
     </div>
 
 
@@ -137,35 +126,29 @@
     <script src="../js/jquery.fullpage.js"></script>
     <script src="../js/jquery.rss.js"></script>
     <script>
-      w3.includeHTML();
+        w3.includeHTML();
         $(document).ready(function() {
             jQuery(function($) {
-                $("#rss-feeds").rss("http://www.wissentechnology.com/feed/",
-                    {
-                        entryTemplate:'<div class="col-xs-12 whoWeAre noPadding blog-title">{title}</div><div class="col-xs-12"> <p class="commonAlign" style="display: none;">{bodyPlain}</p> </div> <div class="col-xs-12 text-center knowMoreLink" style="margin-right:10px;cursor:pointer">Read More...</span></div>',
-                        dateLocale: 'de',
-                        success: function(){
-                            $(".knowMoreLink").click(function () {
-                                console.log($(this).text());
-                                if($(this).text() == "Read More..."){
-                                    $(this).text("Show Less");
-                                }
-                                else {
-                                    $(this).text("Read More...");
-                                };
-                                $(this).prev('div').find('.commonAlign').slideToggle()
-                            })
-                        }
-                    })
+                $("#rss-feeds").rss("https://wissentech.wordpress.com/category/blogs/feed/", {
+                    entryTemplate: '<div class="col-xs-12 jobTitleJob noPadding">{title}</div><div class="col-xs-12 noPadding"> <p class="commonAlign">{bodyPlain}</p> </div> <div class="col-xs-12 text-center knowMoreLink noPadding" style="cursor:pointer"><a href="{url}">Read More...</a></span></div>',
+                    dateLocale: 'de',
+                    success: function() {
+                        var myDiv = $('.commonAlign');
+                        myDiv.text(myDiv.text().substring(0, 300))
+
+                    }
+                })
             })
-          $('li.dropdown').find('a').on('click', function() {
-              window.location = $(this).attr('href');
-          });
-          var w= $(".foot").innerHeight();
-           var width = $( window ).width();
-           if(width > 999){
-             $(".footer_contact").css("height",w+"px");
-           }
+            $('li.dropdown').find('a').on('click', function() {
+                window.location = $(this).attr('href');
+            });
+
+
+            var w = $(".foot").innerHeight();
+            var width = $(window).width();
+            if (width > 999) {
+                $(".footer_contact").css("height", w + "px");
+            }
             $('#fullpage').fullpage();
             var wow = new WOW({
                 animateClass: 'animated',
@@ -183,23 +166,24 @@
 </body>
 <style>
     @media screen and (max-width: 767px) {
-      .health-heading {
-          padding-top: 15px !important;
-      }
-      .industry-sublabel-span {
-          font-size: 28px;
-      }
+        .health-heading {
+            padding-top: 15px !important;
+        }
+        .industry-sublabel-span {
+            font-size: 28px;
+        }
+    }
 
+    @media screen and (min-width: 768px) {
+        .industry-sublabel {
+            padding: 1% 12% 1% 2%;
+            left: 5%;
+        }
     }
-    @media screen and (min-width: 768px){
-      .industry-sublabel {
-          padding: 1% 12% 1% 2%;
-          left: 5%;
-      }
-    }
-      p{
+
+    p {
         text-align: justify;
-      }
+    }
 
     .whoWeAre {
         color: #f79131;
@@ -210,12 +194,13 @@
         letter-spacing: 2px;
         padding-top: 5%;
     }
+
     .knowMoreLink {
         color: #f79131;
         text-align: left;
         text-transform: uppercase;
         font-family: Raleway-SemiBold;
-
     }
 </style>
+
 </html>
