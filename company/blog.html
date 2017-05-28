@@ -133,19 +133,9 @@
                     entryTemplate: '<div class="col-xs-12 jobTitleJob noPadding">{title}</div><div class="col-xs-12 noPadding"> <p class="commonAlign">{bodyPlain}</p> </div> <div class="col-xs-12 text-center knowMoreLink noPadding" style="cursor:pointer"><a href="{url}">Read More...</a></span></div>',
                     dateLocale: 'de',
                     success: function() {
-                        // document.querySelector('p').innerText = truncateText('p', 107);
                         var myDiv = $('.commonAlign');
                         myDiv.text(myDiv.text().substring(0, 300))
-                        // $(".knowMoreLink").click(function () {
-                        //     console.log($(this).text());
-                        //     if($(this).text() == "Read More..."){
-                        //         $(this).text("Show Less");
-                        //     }
-                        //     else {
-                        //         $(this).text("Read More...");
-                        //     };
-                        //     $(this).prev('div').find('.commonAlign').slideToggle()
-                        // })
+
                     }
                 })
             })
@@ -153,15 +143,6 @@
                 window.location = $(this).attr('href');
             });
 
-            // function truncateText(selector, maxLength) {
-            //       var element = document.querySelector(selector),
-            //           truncated = element.innerText;
-            //
-            //       if (truncated.length > maxLength) {
-            //           truncated = truncated.substr(0,maxLength) + '...';
-            //       }
-            //       return truncated;
-            //   }
 
             var w = $(".foot").innerHeight();
             var width = $(window).width();

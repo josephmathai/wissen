@@ -221,6 +221,7 @@ a {
     margin-top: 20px;
     position: static;
     right: 0px;
+    min-height: 0px !important;
   }
   .footer-main>li {
     text-align: center !important;
