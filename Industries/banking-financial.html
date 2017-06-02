@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" href="../images/favourite.png" type="image/png" />
+
     <link rel="stylesheet" href="../css/bootstrap.css" />
     <link rel="stylesheet" href="../css/fonts.css" />
     <link rel="stylesheet" href="../css/main.css" />
@@ -224,10 +225,9 @@
             </div>
         </div>
 
+<div id="loadingfunction">
 
-      <div w3-include-html="../company/footer.html"></div>
-
-
+</div>
     </div>
 
 
@@ -235,15 +235,12 @@
     <script src="../js/bootstrap.js"></script>
     <script src="../js/wow.js"></script>
     <script src="../js/slick.min.js"></script>
-    <script src="../js/w3.js"></script>
     <script src="../js/jquery.fullpage.js"></script>
     <script>
-    w3.includeHTML();
         $(document).ready(function() {
           $('li.dropdown').find('a').on('click', function() {
               window.location = $(this).attr('href');
           });
-
           $(".cardView").mouseover(function(e){
              $(this).find(".kiru").css("background-color","#f79131");
              $(this).find(".corner").css("border-top","40px solid #f79131");
@@ -265,11 +262,6 @@
 
             wow.init();
             var v = window.innerWidth;
-            // var w = $(".foot").innerHeight();
-            // var width = $(window).width();
-            // if (width > 999) {
-            //     $(".footer_contact").css("height", w + "px");
-            // }
             if (v > 1000) {
                 $('.slider').slick({
                     slidesToShow: 3,
@@ -311,3 +303,8 @@
 
 </style>
 </html>
+<script>
+$(function(){
+$("#loadingfunction").load("../company/footer.html");
+});
+</script>

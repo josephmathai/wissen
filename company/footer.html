@@ -44,7 +44,7 @@
         </div>
 
 
-        <div class="footer_contact" style="min-height:217px;">
+        <div class="footer_contact" >
             <span class="contact_label">Contact US</span>
             <span class="contact_email">contactus@wissen.com</span>
             <div class="footer_followus">
@@ -68,3 +68,19 @@
 
 </div>
 <div class="copyright_footer">&copy;Copyright Wissen.All rights Reserved</div>
+<script>
+$(window).resize(function(){
+  var w= $(".foot").innerHeight();
+   var width = $( window ).width();
+   if(width > 982){
+     $(".footer_contact").css("height",w+"px");
+   }
+});
+$(document).ready(function(){
+  var w= $(".foot").innerHeight();
+   var width = $( window ).width();
+  if(width > 982){
+    $(".footer_contact").css("height",w+"px");
+  }
+})
+</script>

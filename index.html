@@ -586,7 +586,7 @@
         </div>
 
 
-        <div class="footer_contact" style="min-height:217px;">
+        <div class="footer_contact" >
             <span class="contact_label">Contact US</span>
             <span class="contact_email">contactus@wissen.com</span>
             <div class="footer_followus">
@@ -710,6 +710,14 @@
               $(".hoverLinks").click(function () {
                   $(".navbar-collapse").removeClass('in');
               })
+              var height =$(".main_footer").height();
+              var window_width = $(window).innerWidth();
+
+              if(window_width >982){
+                   $(".footer_contact").css("height",height+"px");
+              }
+              // alert(window_width);
+
               jQuery(function($) {
                 $("#rss-feeds").rss("https://wissentech.wordpress.com/category/careers/feed/",
                 {
@@ -757,11 +765,7 @@
                         console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
                     }
                 });
-                var w = $(".foot").innerHeight();
-                var width = $(window).width();
-                if (width > 999) {
-                    $(".footer_contact").css("height", w + "px");
-                }
+              
                 wow.init();
                 $('.slider').slick({
                     prevArrow: '<div class="slick-prev"></div>',

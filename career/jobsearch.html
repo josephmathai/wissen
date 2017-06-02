@@ -302,11 +302,6 @@
                     console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
                 }
             });
-            var w = $(".foot").innerHeight();
-            var width = $(window).width();
-            if (width > 999) {
-                $(".footer_contact").css("height", w + "px");
-            }
             wow.init();
             $('.slider').slick({
                 prevArrow: '<div class="slick-prev"></div>',
@@ -415,3 +410,19 @@
 </body>
 
 </html>
+<script>
+$(window).resize(function(){
+  var w= $(".foot").innerHeight();
+   var width = $( window ).width();
+   if(width > 982){
+     $(".footer_contact").css("height",w+"px");
+   }
+});
+$(document).ready(function(){
+  var w= $(".foot").innerHeight();
+   var width = $( window ).width();
+  if(width > 982){
+    $(".footer_contact").css("height",w+"px");
+  }
+})
+</script>

@@ -176,11 +176,7 @@ w3.includeHTML();
           $('li.dropdown').find('a').on('click', function() {
               window.location = $(this).attr('href');
           });
-          var w= $(".foot").innerHeight();
-           var width = $( window ).width();
-           if(width > 999){
-             $(".footer_contact").css("height",w+"px");
-           }
+      
             $('#fullpage').fullpage();
             var wow = new WOW({
                 animateClass: 'animated',
@@ -234,3 +230,19 @@ w3.includeHTML();
     }
 </style>
 </html>
+<script>
+$(window).resize(function(){
+  var w= $(".foot").innerHeight();
+   var width = $( window ).width();
+   if(width > 982){
+     $(".footer_contact").css("height",w+"px");
+   }
+});
+$(document).ready(function(){
+  var w= $(".foot").innerHeight();
+   var width = $( window ).width();
+  if(width > 982){
+    $(".footer_contact").css("height",w+"px");
+  }
+})
+</script>
