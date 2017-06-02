@@ -132,8 +132,11 @@
         $(document).ready(function() {
             jQuery(function($) {
                 $("#rss-feeds").rss("https://wissentech.wordpress.com/category/blogs/feed/", {
-                    entryTemplate: '<div class="col-xs-12 jobTitleJob noPadding">{title}</div><div class="col-xs-12 noPadding"> <p class="commonAlign">{bodyPlain}</p> </div> <div class="col-xs-12 text-center knowMoreLink noPadding" style="cursor:pointer"><a href="{url}">Read More...</a></span></div>',
+                    entryTemplate: '<div class="col-xs-12 jobTitleJob noPadding"><img src="{thumbnail}">{title}</div><div class="col-xs-12 noPadding"> <p class="commonAlign">{bodyPlain}</p> </div> <div class="col-xs-12 text-center knowMoreLink noPadding" style="cursor:pointer"><a href="{url}">Read More...</a></span></div>',
                     dateLocale: 'de',
+                    tokens: {
+                        thumbnail: function(entry, tokens) { return entry.thumbnail }
+                    },
                     success: function() {
                         var myDiv = $('.commonAlign');
                         myDiv.text(myDiv.text().substring(0, 300))
