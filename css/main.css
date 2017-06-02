@@ -5,6 +5,7 @@
 .bodyStyle {
   font-family: Raleway-Regular;
   background: white !important;
+  margin: 0
 }
 .bramdImg {
   width: 200px;
@@ -506,4 +507,10 @@ ol {
 
 .jobDescription {
     display: none;
+}
+
+@media (min-width:1300px) and (max-width:1500px){
+  .container {
+      width: 100% ;
+  }
 }
