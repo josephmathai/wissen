@@ -176,7 +176,7 @@ w3.includeHTML();
           $('li.dropdown').find('a').on('click', function() {
               window.location = $(this).attr('href');
           });
-      
+
             $('#fullpage').fullpage();
             var wow = new WOW({
                 animateClass: 'animated',
@@ -232,14 +232,14 @@ w3.includeHTML();
 </html>
 <script>
 $(window).resize(function(){
-  var w= $(".foot").innerHeight();
+  var w= $(".main_footer").innerHeight();
    var width = $( window ).width();
    if(width > 982){
      $(".footer_contact").css("height",w+"px");
    }
 });
 $(document).ready(function(){
-  var w= $(".foot").innerHeight();
+  var w= $(".main_footer").innerHeight();
    var width = $( window ).width();
   if(width > 982){
     $(".footer_contact").css("height",w+"px");

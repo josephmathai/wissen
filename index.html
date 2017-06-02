@@ -117,7 +117,7 @@
                         </li>
                         <li>
                             <img src="images/image4.jpg" />
-                            <div class="flex-caption paragraph_home col-xs-12"><span class="para-heading">What we Do</span>
+                            <div class="flex-caption paragraph_home col-xs-12" id="whatwedone"><span class="para-heading">What we Do</span>
                                 <div class="span-font col-xs-12 noPadding">We solve complex business problems making best use of technology</div>
                                 <div class="span-font col-xs-12 knowMoreSlider  noPadding"><a href="technologies/tech_practice.html" class="no-hover"><span class="pull-left"> KNOW MORE</span><img src="images/Rightarrow_white.png" class="slid-imge pull-left"></a></div>
                             </div>
@@ -134,7 +134,7 @@
                         </li>
                         <li>
                             <img src="images/mobile_banner_What_we_Do.jpg" />
-                            <div class="flex-caption flex-caption-2 paragraph_home col-xs-12"><span class="mobile-para-heading">What we Do</span>
+                            <div class="flex-caption flex-caption-2 paragraph_home col-xs-12" id="whatwedo"><span class="mobile-para-heading">What we Do</span>
                                 <div class="span-font col-xs-12 noPadding">We solve complex business problems making best use of technology</div>
                                 <div class="span-font col-xs-12 noPadding"><a href="technologies/tech_practice.html" class="no-hover"><span class="pull-left"> KNOW MORE</span><img src="images/Rightarrow_white.png" class="slid-imge pull-left"></a></div>
                             </div>
@@ -765,7 +765,7 @@
                         console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
                     }
                 });
-              
+
                 wow.init();
                 $('.slider').slick({
                     prevArrow: '<div class="slick-prev"></div>',
@@ -833,7 +833,13 @@
                     }
                 });
             });
-
+            $(window).resize(function(){
+              var w= $(".main_footer").innerHeight();
+               var width = $( window ).width();
+               if(width > 982){
+                 $(".footer_contact").css("height",w+"px");
+               }
+            });
         </script>
         <style>
             @media screen and (max-width: 860px) {
