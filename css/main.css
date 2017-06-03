@@ -514,3 +514,8 @@ ol {
       width: 100% ;
   }
 }
+@media (min-width:769px) and (max-width:1299px){
+  .container {
+      width: 100% !important;
+  }
+}
