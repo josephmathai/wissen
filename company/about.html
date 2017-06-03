@@ -453,7 +453,10 @@
           </div> -->
         </div>
 
-      <div w3-include-html="../company/footer.html"></div>
+        <div id="loadingfunction">
+
+        </div>
+
 
     </div>
 
@@ -462,11 +465,10 @@
     <script src="../js/bootstrap.js"></script>
     <script src="../js/slick.min.js"></script>
     <script src="../js/wow.js"></script>
-    <script src="../js/w3.js"></script>
     <script src="../js/jquery.fullpage.js"></script>
     <script src="../js/jquery.rss.js"></script>
     <script>
-    w3.includeHTML();
+
 
         $(document).ready(function() {
           var v= window.innerWidth;
@@ -544,12 +546,6 @@
             });
             wow.init();
 
-            var w = $(".foot").innerHeight();
-            var width = $(window).width();
-            if (width > 999) {
-                $(".footer_contact").css("height", w + "px");
-            }
-
             var windowSize = window.innerWidth;
 
             if (windowSize <= 768) {
@@ -617,3 +613,8 @@
 </body>
 
 </html>
+<script>
+$(function(){
+$("#loadingfunction").load("../company/footer.html");
+});
+</script>

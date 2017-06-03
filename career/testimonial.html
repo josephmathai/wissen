@@ -159,7 +159,11 @@
             </div>
 
         </div>
-    <div w3-include-html="../company/footer.html"></div>
+
+                <div id="loadingfunction">
+
+                </div>
+
 
     </div>
 
@@ -168,20 +172,13 @@
     <script src="../js/bootstrap.js"></script>
     <script src="../js/slick.min.js"></script>
     <script src="../js/wow.js"></script>
-    <script src="../js/w3.js"></script>
     <script src="../js/jquery.fullpage.js"></script>
     <script>
-    w3.includeHTML();
         $(document).ready(function() {
             $('li.dropdown').find('a').on('click', function() {
                 window.location = $(this).attr('href');
             });
             $('#fullpage').fullpage();
-            var w = $(".foot").innerHeight();
-            var width = $(window).width();
-            if (width > 999) {
-                $(".footer_contact").css("height", w + "px");
-            }
             var wow = new WOW({
                 animateClass: 'animated',
                 offset: 100,
@@ -296,3 +293,8 @@
     }
 
 </style>
+<script>
+$(function(){
+$("#loadingfunction").load("../company/footer.html");
+});
+</script>

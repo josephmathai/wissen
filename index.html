@@ -23,7 +23,48 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <script src="js/w3.js"></script>
+    <style>
+        @media screen and (max-width: 860px) {
+            .flex-direction-nav .flex-prev {
+                opacity: 1;
+                left: 0px !important;
+            }
+            .flex-direction-nav .flex-next {
+                opacity: 1;
+                right: 0px !important;
+            }
+            .themeMargin {
+                margin-top: 0px !important;
+            }
+            .backgroundImage {
+                margin-top: 0px !important
+            }
+            .slick-prev {
+                left: -15px !important;
+            }
+        }
 
+        .slideImages {
+            background: #001328 !important;
+        }
+
+        .knowMore>a {
+            color: #f79131;
+        }
+
+        .knowMore>a:hover {
+            color: white;
+        }
+
+        .footer_content {
+            padding-top: 32px !important;
+            line-height: 21px !important;
+        }
+
+        .flex-caption {
+            max-width: 700px !important;
+        }
+    </style>
 </head>
 
 <body class="bodyStyle">
@@ -117,7 +158,7 @@
                         </li>
                         <li>
                             <img src="images/image4.jpg" />
-                            <div class="flex-caption paragraph_home col-xs-12"><span class="para-heading">What we Do</span>
+                            <div class="flex-caption paragraph_home col-xs-12" id="whatwedone"><span class="para-heading">What we Do</span>
                                 <div class="span-font col-xs-12 noPadding">We solve complex business problems making best use of technology</div>
                                 <div class="span-font col-xs-12 knowMoreSlider  noPadding"><a href="technologies/tech_practice.html" class="no-hover"><span class="pull-left"> KNOW MORE</span><img src="images/Rightarrow_white.png" class="slid-imge pull-left"></a></div>
                             </div>
@@ -134,7 +175,7 @@
                         </li>
                         <li>
                             <img src="images/mobile_banner_What_we_Do.jpg" />
-                            <div class="flex-caption flex-caption-2 paragraph_home col-xs-12"><span class="mobile-para-heading">What we Do</span>
+                            <div class="flex-caption flex-caption-2 paragraph_home col-xs-12" id="whatwedo"><span class="mobile-para-heading">What we Do</span>
                                 <div class="span-font col-xs-12 noPadding">We solve complex business problems making best use of technology</div>
                                 <div class="span-font col-xs-12 noPadding"><a href="technologies/tech_practice.html" class="no-hover"><span class="pull-left"> KNOW MORE</span><img src="images/Rightarrow_white.png" class="slid-imge pull-left"></a></div>
                             </div>
@@ -485,25 +526,25 @@
                         </ul>
                     </div>
 
+        <div class="footer_contact" >
+            <span class="contact_label">Contact US</span>
+            <span class="contact_email">contactus@wissen.com</span>
+            <div class="footer_followus">
+                <span class="followus">Follow Us</span>
+                <div style="padding-left:15px;padding-top: 5px;">
+                    <a target="_blank" href="https://facebook.com/wissentechno" class="linksTo"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a target="_blank" href="https://twitter.com/wissentechno" class="linksTo"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <!-- <a target="_blank" href="#" class="linksTo"><i class="fa fa-google-plus" aria-hidden="true"></i></a> -->
+                    <a target="_blank" href="https://www.linkedin.com/company-beta/13226107/" class="linksTo"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <!-- <a target="_blank" href="#" class="linksTo"><i class="fa fa-youtube" aria-hidden="true"></i></a> -->
+                </div>
+            </div>
+            <span class="contact_label">Discover our other Brand</span>
+            <a href="https://www.wiseengage.com" target="_blank" class="wissenengagehover" style="text-decoration:none;">
+              <span class="contact_email">WiseEngage</span>
+            </a>
+        </div>
 
-                    <div class="footer_contact" style="min-height:217px;">
-                        <span class="contact_label">Contact US</span>
-                        <span class="contact_email">contactus@wissen.com</span>
-                        <div class="footer_followus">
-                            <span class="followus">Follow Us</span>
-                            <div style="padding-left:15px;padding-top: 5px;">
-                                <a target="_blank" href="https://facebook.com/wissentechno" class="linksTo"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                <a target="_blank" href="https://twitter.com/wissentechno" class="linksTo"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                <!-- <a target="_blank" href="#" class="linksTo"><i class="fa fa-google-plus" aria-hidden="true"></i></a> -->
-                                <a target="_blank" href="https://www.linkedin.com/company-beta/13226107/" class="linksTo"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                                <!-- <a target="_blank" href="#" class="linksTo"><i class="fa fa-youtube" aria-hidden="true"></i></a> -->
-                            </div>
-                        </div>
-                        <span class="contact_label">Discover our other Brand</span>
-                        <a href="https://www.wiseengage.com" target="_blank" class="wissenengagehover" style="text-decoration:none;">
-                            <span class="contact_email">WiseEngage</span>
-                        </a>
-                    </div>
 
 
                 </div>
@@ -544,8 +585,23 @@
 
             }).call(this);
             $(document).ready(function() {
-                $(".hoverLinks").click(function() {
-                    $(".navbar-collapse").removeClass('in');
+              $(".hoverLinks").click(function () {
+                  $(".navbar-collapse").removeClass('in');
+              })
+              var height =$(".main_footer").height();
+              var window_width = $(window).innerWidth();
+
+              if(window_width >982){
+                   $(".footer_contact").css("height",height+"px");
+              }
+              // alert(window_width);
+
+              jQuery(function($) {
+                $("#rss-feeds").rss("https://wissentech.wordpress.com/category/careers/feed/",
+                {
+                  entryTemplate:' <li class="newPoints"><a href="career/jobsearch.html"><span class="boldText">{title}</span></a></li>',
+                   limit: 3,
+                   dateLocale: 'de'
                 })
                 jQuery(function($) {
                     $("#rss-feeds").rss("https://wissentech.wordpress.com/category/careers/feed/", {
@@ -558,6 +614,7 @@
                         limit: 4,
                     })
                 })
+              });
 
 
                 $(".cardView").mouseover(function(e) {
@@ -592,11 +649,7 @@
                         console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
                     }
                 });
-                var w = $(".foot").innerHeight();
-                var width = $(window).width();
-                if (width > 999) {
-                    $(".footer_contact").css("height", w + "px");
-                }
+
                 wow.init();
                 $('.slider').slick({
                     prevArrow: '<div class="slick-prev"></div>',
@@ -664,49 +717,16 @@
                     }
                 });
             });
+            $(window).resize(function(){
+              var w= $(".main_footer").innerHeight();
+               var width = $( window ).width();
+               if(width > 982){
+                 $(".footer_contact").css("height",w+"px");
+               }
+            });
+
         </script>
-        <style>
-            @media screen and (max-width: 860px) {
-                .flex-direction-nav .flex-prev {
-                    opacity: 1;
-                    left: 0px !important;
-                }
-                .flex-direction-nav .flex-next {
-                    opacity: 1;
-                    right: 0px !important;
-                }
-                .themeMargin {
-                    margin-top: 0px !important;
-                }
-                .backgroundImage {
-                    margin-top: 0px !important
-                }
-                .slick-prev {
-                    left: -15px !important;
-                }
-            }
 
-            .slideImages {
-                background: #001328 !important;
-            }
-
-            .knowMore>a {
-                color: #f79131;
-            }
-
-            .knowMore>a:hover {
-                color: white;
-            }
-
-            .footer_content {
-                padding-top: 32px !important;
-                line-height: 21px !important;
-            }
-
-            .flex-caption {
-                max-width: 700px !important;
-            }
-        </style>
 
 </body>
 

@@ -114,14 +114,16 @@
                 </div>
             </div>
         </div>
-        <div w3-include-html="../company/footer.html"></div>
+        <div id="loadingfunction">
+
+        </div>
+
     </div>
 
 
     <script src="../js/jquery.js"></script>
     <script src="../js/bootstrap.js"></script>
     <script src="../js/wow.js"></script>
-    <script src="../js/w3.js"></script>
     <script src="../js/slick.min.js"></script>
     <script src="../js/jquery.fullpage.js"></script>
     <script src="../js/jquery.rss.js"></script>
@@ -132,13 +134,10 @@
                 $("#rss-feeds").rss("https://wissentech.wordpress.com/category/blogs/feed/", {
                     entryTemplate: '<div class="col-xs-12 jobTitleJob noPadding">{title}</div><div class="col-xs-12 text-center" style="margin:10px 0"><img src="{thumbnail}"></div><div class="col-xs-12 noPadding"> <p class="commonAlign">{bodyPlain}</p> </div> <div class="col-xs-12 text-center knowMoreLink noPadding" style="cursor:pointer"><a href="{url}">Read More...</a></span></div>',
                     dateLocale: 'de',
-                    tokens: {
-                        thumbnail: function(entry, tokens) { return entry.thumbnail }
-                    },
                     success: function() {
                         var myDiv = $('.commonAlign');
                         myDiv.text(myDiv.text().substring(0, 300))
-                        
+
                     }
                 })
             })
@@ -147,11 +146,6 @@
             });
 
 
-            var w = $(".foot").innerHeight();
-            var width = $(window).width();
-            if (width > 999) {
-                $(".footer_contact").css("height", w + "px");
-            }
             $('#fullpage').fullpage();
             var wow = new WOW({
                 animateClass: 'animated',
@@ -207,3 +201,8 @@
 </style>
 
 </html>
+<script>
+$(function(){
+$("#loadingfunction").load("../company/footer.html");
+});
+</script>

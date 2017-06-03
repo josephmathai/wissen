@@ -518,7 +518,7 @@ a {
 
 @media screen and (max-width:480px){
 	.flex-caption{
-		margin-top:-102px !important;
+		margin-top:-114px !important;
 		width:90%;
 	}
     .flex-caption-2 {
@@ -533,8 +533,11 @@ a {
 }
 @media (min-width:459px) and (max-width:767px){
 	.flex-caption{
-		margin-top:-97px !important;
+		margin-top:-94px !important;
 	}
+  #whatwedo{
+    margin-top:-108px !important;
+  }
 	.span-font{
 		font-size:17px !important;
 	}
