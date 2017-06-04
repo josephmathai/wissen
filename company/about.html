@@ -498,6 +498,15 @@
                       var myDiv = $('.sub-card');
                       myDiv.text(myDiv.text().substring(0, 90));
                       setSlider();
+                      $(".cardView").mouseover(function(e){
+                         $(this).find(".kiru").css("background-color","#f79131");
+                         $(this).find(".corner").css("border-top","40px solid #f79131");
+                      });
+
+                      $(".cardView").mouseout(function(){
+                        $(this).find(".kiru").css("background-color","white");
+                        $(this).find(".corner").css("border-top","40px solid white");
+                      });
                   }
               })
           })
@@ -527,15 +536,7 @@
             }
           }
 
-          $(".cardView").mouseover(function(e){
-             $(this).find(".kiru").css("background-color","#f79131");
-             $(this).find(".corner").css("border-top","40px solid #f79131");
-          });
 
-          $(".cardView").mouseout(function(){
-            $(this).find(".kiru").css("background-color","white");
-            $(this).find(".corner").css("border-top","40px solid white");
-          });
 
           $('li.dropdown').find('a').on('click', function() {
               window.location = $(this).attr('href');

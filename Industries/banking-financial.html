@@ -194,6 +194,16 @@
                     },
                     success: function() {
                         setSlider();
+                        $(".cardView").mouseover(function(e) {
+                            // alert("in");
+                            $(this).find(".kiru").css("background-color", "#f79131");
+                            $(this).find(".corner").css("border-top", "40px solid #f79131");
+                        });
+
+                        $(".cardView").mouseout(function() {
+                            $(this).find(".kiru").css("background-color", "white");
+                            $(this).find(".corner").css("border-top", "40px solid white");
+                        });
                     }
                 })
             })
@@ -227,16 +237,7 @@
             $('li.dropdown').find('a').on('click', function() {
                 window.location = $(this).attr('href');
             });
-            $(".cardView").mouseover(function(e) {
-                alert("in");
-                $(this).find(".kiru").css("background-color", "#f79131");
-                $(this).find(".corner").css("border-top", "40px solid #f79131");
-            });
-
-            $(".cardView").mouseout(function() {
-                $(this).find(".kiru").css("background-color", "white");
-                $(this).find(".corner").css("border-top", "40px solid white");
-            });
+          
 
             $('#fullpage').fullpage();
             var wow = new WOW({
