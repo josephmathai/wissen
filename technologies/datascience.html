@@ -195,7 +195,8 @@
                             return entry.thumbnail
                         },
                         id: function(entry, tokens) {
-                          var id = entry.title.replace(/\s/g,'')
+                          var id = entry.title.replace(/\s/g,'');
+                          id= id.replace('/','')
                           return id
                         }
                     },
