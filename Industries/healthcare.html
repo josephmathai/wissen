@@ -189,6 +189,15 @@
                         },
                         success: function() {
                             setSlider();
+                            $(".cardView").mouseover(function(e) {
+                                $(this).find(".kiru").css("background-color", "#f79131");
+                                $(this).find(".corner").css("border-top", "40px solid #f79131");
+                            });
+
+                            $(".cardView").mouseout(function() {
+                                $(this).find(".kiru").css("background-color", "white");
+                                $(this).find(".corner").css("border-top", "40px solid white");
+                            });
                         }
                     })
                 })
@@ -224,15 +233,7 @@
                     window.location = $(this).attr('href');
                 });
 
-                $(".cardView").mouseover(function(e) {
-                    $(this).find(".kiru").css("background-color", "#f79131");
-                    $(this).find(".corner").css("border-top", "40px solid #f79131");
-                });
 
-                $(".cardView").mouseout(function() {
-                    $(this).find(".kiru").css("background-color", "white");
-                    $(this).find(".corner").css("border-top", "40px solid white");
-                });
 
                 $('#fullpage').fullpage();
                 var wow = new WOW({
