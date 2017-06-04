@@ -269,7 +269,6 @@ a {
 .header-text {
     font-size: 16px;
     color: #fff;
-    text-align: center;
 }
 
 .slick-prev:before, .slick-next:before {
@@ -446,6 +445,9 @@ a {
    .show-div{
      display: none !important;
    }
+   .blogCneter{
+     text-align: center;
+   }
    .hide-div{
      display: block;
    }
@@ -523,6 +525,10 @@ a {
 	}
   .employeetext{
     left:20%;
+  }
+
+  .header-text{
+    text-align: center;
   }
     .flex-caption-2 {
         margin-top:-103px !important;
