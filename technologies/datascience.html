@@ -66,7 +66,7 @@
                         <a class="dropdown-toggle navSmallScreen active" data-toggle="dropdown" href="#">Services & Technologies</a>
                         <ul class="dropdown-menu">
                             <div class="triangle"></div>
-                            <li ><a href="../technologies/distributed-development.html">Distributed Application <br> Development</a></li>
+                            <li><a href="../technologies/distributed-development.html">Distributed Application <br> Development</a></li>
                             <li><a href="../technologies/datascience.html">NLU & Analytics</a></li>
                             <li style="border-bottom:none;"><a href="../technologies/digital-experience.html">Digital Experience</a></li>
                         </ul>
@@ -151,73 +151,15 @@
             <div class="col-xs-12 col-md-10 col-md-offset-1">
                 <div class="projects-label">
                     <h2 class="project-head">Projects</h2></div>
-                <div class="col-xs-12 col-sm-12 col-md-12 slider-demo">
-
-                    <div class="slider col-xs-12 noPadding">
-
-
-
-                        <div class="col-md-4 col-sm-4 col-xs-12 noPadding" style="text-align:center;">
-
-                            <a href="../project/project.html#finance" style="text-decoration:none;display:inline-block;" class="cardView">
-                                <div class="kiru"><img class="bimg" src="../images/Digital.jpg" style="width: 100%;height:170px;" />
-                                </div>
-                                <div class="corner">
-                                    <h5 class="corner-head card-mainhead">FINANCE ANALYTICS
-               <span class="card-lghead"><span style="padding-right:5px;">On</span><span>06 May 2017</span></span>
-              </h5>
-                                </div>
-                            </a>
-                        </div>
-                        <!-- <div class="col-md-4 col-sm-4 col-xs-12 noPadding" style="text-align:center;">
-                            <a href="../project/project.html#compl" style="text-decoration:none;display:inline-block;" class="cardView">
-                                <div class="kiru"><img class="bimg" src="../images/RiskReg.jpg" style="width: 100%;height:170px;" />
-                                </div>
-                                <div class="corner">
-                                    <h5 class="corner-head card-mainhead">COMPLIANCE
-               <span class="card-lghead"><span style="padding-right:5px;">On</span><span>06 May 2017</span></span>
-              </h5>
-                                </div>
-                            </a>
-                        </div> -->
-
-                        <!-- <div class="col-md-4 col-sm-4 col-xs-12 noPadding" style="text-align:center;">
-
-                            <a href="../project/project.html#trade" style="text-decoration:none;display:inline-block;" class="cardView">
-                                <div class="kiru"><img class="bimg" src="../images/CapMar.jpg" style="width: 100%;height:170px;" />
-                                </div>
-                                <div class="corner">
-                                    <h5 class="corner-head card-mainhead">TRADE MANAGEMENT
-               <span class="card-lghead"><span style="padding-right:5px;">On</span><span>06 May 2017</span></span>
-              </h5>
-                                </div>
-                            </a>
-                        </div> -->
-                        <!-- <div class="col-md-4 col-sm-4 col-xs-12 noPadding" style="text-align:center;">
-                            <a href="../project/project.html#impl" style="text-decoration:none;display:inline-block;" class="cardView">
-                                <div class="kiru"><img class="bimg" src="../images/Banking.jpg" style="width: 100%;height:170px;" />
-                                </div>
-                                <div class="corner">
-                                    <h5 class="corner-head card-mainhead " data-toggle="tooltip" data-placement="top" title="IMPLEMENTATION OF FIN CRIME AND COMPLIANCE MANAGEMENT SOLUTION">
-                IMPLEMENTATION OF FIN CRIME AND COMPLIANCE MANAGEMENT SOLUTION
-               <span class="card-lghead"><span style="padding-right:5px;">On</span><span>06 May 2017</span></span>
-              </h5>
-                                </div>
-                            </a>
-                        </div> -->
-                    </div>
-
+                <div class="col-xs-12 col-sm-12 col-md-12 slider-demo" id="rss-feeds">
 
                 </div>
             </div>
         </div>
 
+        <div id="loadingfunction">
 
-
-                <div id="loadingfunction">
-
-                </div>
-
+        </div>
 
     </div>
 
@@ -226,22 +168,83 @@
     <script src="../js/bootstrap.js"></script>
     <script src="../js/slick.min.js"></script>
     <script src="../js/wow.js"></script>
+    <script src="../js/moment.js"></script>
+    <script src="../js/jquery.fullpage.js"></script>
+    <script src="../js/jquery.rss.js"></script>
     <script src="../js/jquery.fullpage.js"></script>
     <script>
         $(document).ready(function() {
-          $('li.dropdown').find('a').on('click', function() {
-              window.location = $(this).attr('href');
-          });
 
-          $(".cardView").mouseover(function(e){
-             $(this).find(".kiru").css("background-color","#f79131");
-             $(this).find(".corner").css("border-top","40px solid #f79131");
-          });
+            jQuery(function($) {
+                $("#rss-feeds").rss("https://wissentech.wordpress.com/category/datascience/feed/", {
+                    layoutTemplate: '  <div class="slider col-xs-12 noPadding">{entries}</div>',
+                    entryTemplate: '<div class="col-md-4 col-sm-4 col-xs-12 noPadding" style="text-align:center;">' +
+                        '<a href="../project/project.html#{id}" style="text-decoration:none;display:inline-block;" class="cardView">' +
+                        '<div class="kiru"><img class="bimg" src="{thumbnail}" style="width: 100%;height:170px;" />' +
+                        '</div>' +
+                        '<div class="corner">' +
+                        '<h5 class="corner-head card-mainhead">{title} <span class="card-lghead"><span style="padding-right:5px;">On</span><span>{date}</span></span>' +
+                        '</h5>' +
+                        '</div>' +
+                        '</a>' +
+                        '</div>',
+                    dateLocale: 'de',
+                    limit: 100,
+                    tokens: {
+                        thumbnail: function(entry, tokens) {
+                            return entry.thumbnail
+                        },
+                        id: function(entry, tokens) {
+                          var id = entry.title.replace(/\s/g,'')
+                          return id
+                        }
+                    },
+                    success: function() {
+                        setSlider();
+                    }
+                })
+            })
 
-          $(".cardView").mouseout(function(){
-            $(this).find(".kiru").css("background-color","white");
-            $(this).find(".corner").css("border-top","40px solid white");
-          });
+            function setSlider() {
+                var v = window.innerWidth;
+                if (v > 1000) {
+                    $('.slider').slick({
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        prevArrow: '<div class="slick-prev"></div>',
+                        nextArrow: '<div class="slick-next"></div>'
+                    });
+                } else if (v < 1000 && v > 750) {
+                    $('.slider').slick({
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        prevArrow: '<div class="slick-prev"></div>',
+                        nextArrow: '<div class="slick-next"></div>'
+                    });
+                } else {
+                    $('.slider').slick({
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        prevArrow: '<div class="slick-prev"></div>',
+                        nextArrow: '<div class="slick-next"></div>'
+                    });
+                }
+            }
+
+
+            $('li.dropdown').find('a').on('click', function() {
+                window.location = $(this).attr('href');
+            });
+
+            $(".cardView").mouseover(function(e) {
+                $(this).find(".kiru").css("background-color", "#f79131");
+                $(this).find(".corner").css("border-top", "40px solid #f79131");
+            });
+
+            $(".cardView").mouseout(function() {
+                $(this).find(".kiru").css("background-color", "white");
+                $(this).find(".corner").css("border-top", "40px solid white");
+            });
 
 
             $('#fullpage').fullpage();
@@ -286,17 +289,15 @@
 </body>
 <style>
     @media screen and (max-width: 767px) {
-      .health-heading {
-          padding-top: 15px !important;
-      }
+        .health-heading {
+            padding-top: 15px !important;
+        }
     }
-
-
 </style>
 
 </html>
 <script>
-$(function(){
-$("#loadingfunction").load("../company/footer.html");
-});
+    $(function() {
+        $("#loadingfunction").load("../company/footer.html");
+    });
 </script>

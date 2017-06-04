@@ -41,8 +41,8 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li class="dropdown">
-                      <a class="dropdown-toggle navLinkToggle" data-toggle="dropdown" href="../index.html">Home</a>
-                      <a class="dropdown-toggle navSmallScreen" data-toggle="dropdown" href="#">Home</a>
+                        <a class="dropdown-toggle navLinkToggle" data-toggle="dropdown" href="../index.html">Home</a>
+                        <a class="dropdown-toggle navSmallScreen" data-toggle="dropdown" href="#">Home</a>
                         <ul class="dropdown-menu">
                             <div class="triangle"></div>
                             <li><a href="../index.html">Who we are</a></li>
@@ -67,7 +67,7 @@
                         <a class="dropdown-toggle navSmallScreen" data-toggle="dropdown" href="#">Services & Technologies</a>
                         <ul class="dropdown-menu">
                             <div class="triangle"></div>
-                            <li ><a href="../technologies/distributed-development.html">Distributed Application <br> Development</a></li>
+                            <li><a href="../technologies/distributed-development.html">Distributed Application <br> Development</a></li>
                             <li><a href="../technologies/datascience.html">NLU & Analytics</a></li>
                             <li style="border-bottom:none;"><a href="../technologies/digital-experience.html">Digital Experience</a></li>
                         </ul>
@@ -142,24 +142,7 @@
             <div class="col-xs-12 col-md-10 col-md-offset-1">
                 <div class="projects-label">
                     <h2 class="project-head">Projects</h2></div>
-                <div class="col-xs-12 col-sm-12 col-md-12 slider-demo">
-
-                    <div class="slider col-xs-12 noPadding">
-                        <div class="col-md-4 col-sm-4 col-xs-12 noPadding" style="text-align:center;">
-                            <a href="../project/project.html#health" style="text-decoration:none;display:inline-block;" class="cardView">
-                                <div class="kiru"><img class="bimg" src="../images/analytics.png" style="width: 100%;height:170px;" />
-                                </div>
-                                <div class="corner">
-                                    <h5 class="corner-head card-mainhead">HEALTHCARE ANALYTICS FOR INSURANCE
-               <span class="card-lghead"><span style="padding-right:5px;">On</span><span>28 May 2017</span></span>
-              </h5>
-                                </div>
-                            </a>
-                        </div>
-
-                    </div>
-
-
+                <div class="col-xs-12 col-sm-12 col-md-12 slider-demo" id="rss-feeds">
                 </div>
             </div>
         </div>
@@ -169,61 +152,98 @@
         </div>
 
 
-       <!-- <script src="../js/w3.js"></script> -->
+        <!-- <script src="../js/w3.js"></script> -->
         <script src="../js/jquery.js"></script>
         <script src="../js/bootstrap.js"></script>
         <script src="../js/slick.min.js"></script>
         <script src="../js/wow.js"></script>
         <script src="../js/jquery.fullpage.js"></script>
+        <script src="../js/moment.js"></script>
+        <script src="../js/jquery.rss.js"></script>
         <script>
             $(document).ready(function() {
-              $('li.dropdown').find('a').on('click', function() {
-                  window.location = $(this).attr('href');
-              });
+                jQuery(function($) {
+                    $("#rss-feeds").rss("https://wissentech.wordpress.com/category/healthcare/feed/", {
+                        layoutTemplate: '<div class="slider col-xs-12 noPadding slider">{entries}</div>',
+                        entryTemplate: '<div class="col-md-4 col-sm-4 col-xs-12 noPadding" style="text-align:center;">' +
+                            '<a href="../project/project.html#{id}" style="text-decoration:none;display:inline-block;" class="cardView">' +
+                            '<div class="kiru"><img class="bimg" src="{thumbnail}" style="width: 100%;height:170px;" />' +
+                            '</div>' +
+                            '<div class="corner">' +
+                            '<h5 class="corner-head card-mainhead">{title} <span class="card-lghead"><span style="padding-right:5px;">On</span><span>{date}</span></span>' +
+                            '</h5>' +
+                            '</div>' +
+                            '</a>' +
+                            '</div>',
+                        dateLocale: 'de',
+                        limit: 100,
+                        tokens: {
+                            thumbnail: function(entry, tokens) {
+                                return entry.thumbnail
+                            },
+                            id: function(entry, tokens) {
+                              var id = entry.title.replace(/\s/g,'')
+                              return id
+                            }
+                        },
+                        success: function() {
+                            setSlider();
+                        }
+                    })
+                })
 
-              $(".cardView").mouseover(function(e){
-                 $(this).find(".kiru").css("background-color","#f79131");
-                 $(this).find(".corner").css("border-top","40px solid #f79131");
-              });
+                function setSlider() {
+                    var v = window.innerWidth;
+                    if (v > 1000) {
+                        $('.slider').slick({
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            prevArrow: '<div class="slick-prev"></div>',
+                            nextArrow: '<div class="slick-next"></div>'
+                        });
+                    } else if (v < 1000 && v > 750) {
+                        $('.slider').slick({
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                            prevArrow: '<div class="slick-prev"></div>',
+                            nextArrow: '<div class="slick-next"></div>'
+                        });
+                    } else {
+                        $('.slider').slick({
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            prevArrow: '<div class="slick-prev"></div>',
+                            nextArrow: '<div class="slick-next"></div>'
+                        });
+                    }
+                }
 
-              $(".cardView").mouseout(function(){
-                $(this).find(".kiru").css("background-color","white");
-                $(this).find(".corner").css("border-top","40px solid white");
-              });
+
+                $('li.dropdown').find('a').on('click', function() {
+                    window.location = $(this).attr('href');
+                });
+
+                $(".cardView").mouseover(function(e) {
+                    $(this).find(".kiru").css("background-color", "#f79131");
+                    $(this).find(".corner").css("border-top", "40px solid #f79131");
+                });
+
+                $(".cardView").mouseout(function() {
+                    $(this).find(".kiru").css("background-color", "white");
+                    $(this).find(".corner").css("border-top", "40px solid white");
+                });
 
                 $('#fullpage').fullpage();
                 var wow = new WOW({
                     animateClass: 'animated',
                     offset: 100,
                     callback: function(box) {
-                        console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+                        // console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
                     }
                 });
                 wow.init();
-              
-                var v = window.innerWidth;
-                if (v > 1000) {
-                    $('.slider').slick({
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        prevArrow: '<div class="slick-prev"></div>',
-                        nextArrow: '<div class="slick-next"></div>'
-                    });
-                } else if (v < 1000 && v > 750) {
-                    $('.slider').slick({
-                        slidesToShow: 1,
-                        slidesToScroll: 2,
-                        prevArrow: '<div class="slick-prev"></div>',
-                        nextArrow: '<div class="slick-next"></div>'
-                    });
-                } else {
-                    $('.slider').slick({
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        prevArrow: '<div class="slick-prev"></div>',
-                        nextArrow: '<div class="slick-next"></div>'
-                    });
-                }
+
+
                 $('.selector').slick({
                     nextArrow: '<i class="fa fa-arrow-right"><img src="../images/Leftarrow.png"></i>',
                     prevArrow: '<i class="fa fa-arrow-left"><img src="../images/Leftarrow.png"></i>',
@@ -234,17 +254,15 @@
 </body>
 <style>
     @media screen and (max-width: 767px) {
-      .health-heading {
-          padding-top: 15px !important;
-      }
+        .health-heading {
+            padding-top: 15px !important;
+        }
     }
-
-
 </style>
 
 </html>
 <script>
-$(function(){
-$("#loadingfunction").load("../company/footer.html");
-});
+    $(function() {
+        $("#loadingfunction").load("../company/footer.html");
+    });
 </script>
