@@ -25,7 +25,7 @@
         <div class="line-div">
             <div class="top-line"></div>
         </div>
-        <div class="navbar navbar-custom navbar-default navbar-fixed-top">
+        <div class="navbar navbar-custom navbar-default navbar-static-top container">
             <div class="navbar-header">
                 <a class="header-logo" href="../index.html">
                     <img class="header-image" src="../images/Logo.png" height="37px;">
@@ -151,7 +151,7 @@
           })
 
           function scrollToView(){
-            $("html, body").delay(500).animate({scrollTop: $('#'+id).offset().top-200 }, 1000);
+            $("html, body").delay(500).animate({scrollTop: $('#'+id).offset().top });
 
             // document.getElementById(id).scrollIntoView(true);
           }

@@ -450,7 +450,6 @@ a {
    }
    .mobile-div{
      display: block;
-     margin-top: 63px;
    }
    .desk-div{
      display: none;
@@ -576,9 +575,9 @@ a.no-hover {
     color: #fff !important;
 }
 
-.image_margin_adjust{
+/*.image_margin_adjust{
   margin-top: 72px !important;
-}
+}*/
 
 .wissenengagehover:hover{
   color: #ff932a !important;

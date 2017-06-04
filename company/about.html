@@ -95,11 +95,11 @@
 </head>
 
 <body class="bodyStyle">
-    <div class="col-md-12 noPadding wow fadeInDown">
+    <div class="container noPadding wow fadeInDown">
         <div class="line-div">
             <div class="top-line"></div>
         </div>
-        <div class="navbar navbar-custom navbar-default navbar-fixed-top">
+        <div class="navbar navbar-custom navbar-default navbar-static-top container">
             <div class="navbar-header">
                 <a class="header-logo" href="../index.html">
                     <img class="header-image" src="../images/Logo.png" height="37px;">
@@ -374,8 +374,12 @@
                 <div class="col-md-10 col-md-offset-1 col-xs-12" style="font-size:40px;color:#1A5B83;">
                   Blog
                 </div>
-                <div id="rss-feeds">
+
+                <div  class="col-md-10 col-md-offset-1 col-xs-12 slider-bot">
+                  <div class="col-md-4 col-sm-4 col-xs-12 noPadding" style="text-align:center;">
+
                   <!-- <div class="col-md-4 col-sm-4 col-xs-12 noPadding" style="text-align:center;">
+>>>>>>> 4f7fbb84960269922620d703f15b6b5c61a489e4
                      <a href="https://wissentech.wordpress.com/2017/05/28/5-5-rules-to-work-life-balance/" style="text-decoration:none;display:inline-block;" class="cardView">
                         <div class="kiru"><img class="bimg" src="../images/code.jpg" style="width: 100%;height:150px;"/>
                         </div>
@@ -408,7 +412,7 @@
                           </h5>
                         </div>
                     </a>
-                  </div> -->
+                  </div>
                   <!-- <div class="col-md-4 col-sm-4 col-xs-12 noPadding" style="text-align:center;">
                      <a href="Industries/telecom.html" style="text-decoration:none;display:inline-block;">
                         <div class="kiru"><img class="bimg" src="../images/Blog_3.jpg" style="width: 100%;height:150px;"/>
@@ -466,7 +470,6 @@
     <script src="../js/slick.min.js"></script>
     <script src="../js/wow.js"></script>
     <script src="../js/jquery.fullpage.js"></script>
-    <script src="../js/jquery.rss.js"></script>
     <script>
 
 
@@ -607,7 +610,32 @@
                 nextArrow: '<div class="slick-next"></div>'
               });
             }
+            var v= window.innerWidth;
+            if(v>1000){
+              $('.slider-bot').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                prevArrow: '<div class="slick-prev"></div>',
+                nextArrow: '<div class="slick-next"></div>'
+              });
+            }
 
+            else if(v<1000 && v>750){
+              $('.slider-bot').slick({
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                prevArrow: '<div class="slick-prev"></div>',
+                nextArrow: '<div class="slick-next"></div>'
+              });
+            }
+            else{
+              $('.slider-bot').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                prevArrow: '<div class="slick-prev"></div>',
+                nextArrow: '<div class="slick-next"></div>'
+              });
+            }
         });
     </script>
 
