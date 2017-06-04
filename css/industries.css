@@ -39,7 +39,7 @@
 }
 .projects-slider{
   background: #01204f;
-  min-height: 510px;
+  min-height: 570px;
 }
 .projects-label{
   background: #ff932a;
@@ -140,7 +140,7 @@
 }
 
 .slider-main{
-  padding: 3% 0;
+  padding: 3% 0 0;
 }
 @media screen and (max-width:767px) {
   h3{
