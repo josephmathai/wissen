@@ -595,14 +595,7 @@
                    $(".footer_contact").css("height",height+"px");
               }
               // alert(window_width);
-
-              jQuery(function($) {
-                $("#rss-feeds").rss("https://wissentech.wordpress.com/category/careers/feed/",
-                {
-                  entryTemplate:' <li class="newPoints"><a href="career/jobsearch.html"><span class="boldText">{title}</span></a></li>',
-                   limit: 3,
-                   dateLocale: 'de'
-                })
+                
                 jQuery(function($) {
                     $("#rss-feeds").rss("https://wissentech.wordpress.com/category/careers/feed/", {
                         entryTemplate: ' <li class="newPoints"><a href="career/jobsearch.html"><span class="boldText">{title}</span></a></li>',
@@ -614,7 +607,6 @@
                         limit: 4,
                     })
                 })
-              });
 
 
                 $(".cardView").mouseover(function(e) {
