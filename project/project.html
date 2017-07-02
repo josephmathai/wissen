@@ -123,7 +123,7 @@
           var currentLocation = document.URL;
           var id = currentLocation.substring(currentLocation.lastIndexOf('#') + 1);
           jQuery(function($) {
-              $("#rss-feeds").rss("https://wissentech.wordpress.com/category/projects/feed/", {
+              $("#rss-feeds").rss("http://blog.wissentechnology.com/category/projects/feed/", {
                   entryTemplate: '<div class="col-xs-12 noPadding" id="{id}">'+
                   '<h3 style="color:#ff932a;text-align:left !important;">{title}</h3>'+
                   '<span class="col-xs-12 noPadding"><b>Date:</b><span style="margin-left:10px;">{date}</span></span>'+

@@ -598,12 +598,12 @@
               // alert(window_width);
 
                 jQuery(function($) {
-                    $("#rss-feeds").rss("https://wissentech.wordpress.com/category/careers/feed/", {
+                    $("#rss-feeds").rss("http://blog.wissentechnology.com/category/careers/feed/", {
                         entryTemplate: ' <li class="newPoints"><a href="career/jobsearch.html"><span class="boldText">{title}</span></a></li>',
                         limit: 3,
                         dateLocale: 'de',
                     })
-                    $("#rss-feeds-2").rss("https://wissentech.wordpress.com/category/blogs/feed/", {
+                    $("#rss-feeds-2").rss("http://blog.wissentechnology.com/category/blogs/feed/", {
                         entryTemplate: ' <li class="newPoints"><a href="company/blog.html"><span class="boldText">{title}</span></a></li>',
                         limit: 4,
                     })

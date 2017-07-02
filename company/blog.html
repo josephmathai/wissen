@@ -130,7 +130,7 @@
     <script>
         $(document).ready(function() {
             jQuery(function($) {
-                $("#rss-feeds").rss("https://wissentech.wordpress.com/category/blogs/feed/", {
+                $("#rss-feeds").rss("http://blog.wissentechnology.com/category/blogs/feed/", {
                     entryTemplate: '<div class="col-xs-12 jobTitleJob noPadding">{title}</div><div class="col-xs-12 noPadding"> <p class="commonAlign">{bodyPlain}</p> </div> <div class="col-xs-12 text-center knowMoreLink noPadding" style="cursor:pointer"><a href="{url}">Read More...</a></span></div>',
                     dateLocale: 'de',
                     success: function() {
